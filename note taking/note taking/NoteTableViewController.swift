@@ -7,13 +7,79 @@
 //
 
 import UIKit
+import CoreData
 
-class NoteTableViewController: UIViewController {
+class NoteTableViewController: UITableViewController {
 
+    
+//     var locations  = [Note]()
+
+    
+    //object created to access to the app Delegate
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    
+    //creating an array to store the data
+    var notes = [Note]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+            }
+    
+    override func viewDidAppear(animated: Bool) {
+    
+        //whnevr the view appear tble vw reloads.
+        
+        //declaring the error 
+        var error:NSError?
+        
+        // to fetch from the DB
+        let request = NSFetchRequest(entityName:"Note")
+        notes  = (try! managedObjectContext.executeFetchRequest(request)) as! [Note]
+        
+        for  n_notes in notes
+        {
+         print(n_notes)
+        }
+        self.tableView.reloadData()
+        
     }
+    
+    
+    
+    //tableview delegates
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+       
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+                return notes.count
+       
+    }
+    
+     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        
+        // Configure the cell...
+        
+        let n_note = notes[indexPath.row]
+        cell.textLabel!.text = n_note.descrip
+//        print(notes[indexPath.row])
+        cell.detailTextLabel?.text = n_note.date
+        
+        return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        navigationItem.title = nil
+
+
+    
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

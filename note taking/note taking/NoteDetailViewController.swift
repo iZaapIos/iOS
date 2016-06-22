@@ -18,7 +18,7 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     @IBOutlet weak var TitleTextField: UITextField!
     
     var TextPlaceHolder:UILabel?
-    var note :Note?
+    var note:Note?
     
     
    
@@ -29,6 +29,9 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+       
+        
         clear()
         }
     
@@ -38,17 +41,37 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
         
     }
     
-    @IBAction func SaveButton(sender: AnyObject)
-    {
-        //get the description of the entity
-        let noteDescription = NSEntityDescription.entityForName("Note", inManagedObjectContext: managedObjectContext)
+    @IBAction func SaveButton(sender: AnyObject) {
         
-        //thn ,v create the managed object to insert into the coredata
-
-        let note = Note(entity:noteDescription!,insertIntoManagedObjectContext: managedObjectContext)
-    
+//        //get the description of the entity
+//        let noteDescription = NSEntityDescription.entityForName("Note", inManagedObjectContext: managedObjectContext)
+//        
+//        //thn ,v create the managed object to insert into the coredata
+//        
+//        let note = Note(entity:noteDescription!,insertIntoManagedObjectContext: managedObjectContext)
+        if note == nil
+        {
+            let storeDescription = NSEntityDescription.entityForName("Note", inManagedObjectContext: managedObjectContext)
+            
+            
+            // Then, We Create the Managed Object to be  inserted into the cored data
+            note = Note(entity: storeDescription!, insertIntoManagedObjectContext: managedObjectContext)
+        }
+        
+        
+        //change the date value into string
+        let time = NSDate()
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:sssss"
+        let formatteddate = formatter.stringFromDate(time)
+        
+        
         //set the attribute value
-        note.descrip = TitleTextField.text
+//        TitleTextField.text! = "hai vannakkam"
+        note!.descrip = NoteTextField.text!
+//        print(note!.descrip)
+        note!.date = formatteddate
+//        print(note!.date)
         
         //command to save the data
         var error:NSError?
@@ -70,13 +93,15 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
         }else{
             let errAlert = UIAlertView(title:"SUCCESS",message:" Your Note is saved",delegate:nil,cancelButtonTitle:"OK")
             errAlert.show()
-           
             
-            }
-        
-         NoteTextField.text = ""
-         clear()
+            
         }
+        
+        NoteTextField.text = ""
+        clear()
+        
+    }
+    
     
     func clear()
     {
