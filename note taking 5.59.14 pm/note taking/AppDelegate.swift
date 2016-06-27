@@ -11,15 +11,68 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var categoryID:String {
+        get{
+            return "COUNTER_CATEGORY"
+        }
+    }
 
     var window: UIWindow?
     
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
-        // Override point for customization after application launch.
+        registerNotification()
+
         return true
     }
+    
+    // Register notification settings
+    func registerNotification() {
+        
+        // 2. Create the category ***********************************************
+        
+        // Category
+        let counterCategory = UIMutableUserNotificationCategory()
+        counterCategory.identifier = categoryID
+        
+        // 3. Notification Registration *****************************************
+        
+        let types: UIUserNotificationType = [UIUserNotificationType.Alert,UIUserNotificationType.Badge, UIUserNotificationType.Sound]
+        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory) as? Set<UIUserNotificationCategory>)
+        
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+    }
+    
+    
+    // Schedule the Notifications with repeat
+    func scheduleNotification() {
+        //UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
+        // Schedule the notification ********************************************
+        if UIApplication.sharedApplication().scheduledLocalNotifications!.count == 0 {
+            
+            let notification = UILocalNotification()
+            notification.alertBody = "Hey! Update your counter ;)"
+            notification.soundName = UILocalNotificationDefaultSoundName
+            notification.fireDate = NSDate()
+            notification.category = categoryID
+            notification.repeatInterval = NSCalendarUnit.Minute
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
+    }
+    
+    
+    // MARK: Application Delegate
+    
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        scheduleNotification()
+    }
+
+    
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

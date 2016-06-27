@@ -91,7 +91,8 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
         clear()
     }
     
-            
+    
+    
     func clear()
     {
         NoteTextField.delegate = self
