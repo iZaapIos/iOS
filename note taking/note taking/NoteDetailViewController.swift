@@ -21,7 +21,10 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     var note:Note?
    
     //object created to access to the app Delegate
-    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+//    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    
+        let moContext = UIApplication.sharedApplication().delegate as! AppDelegate
+
 
 
     override func viewDidLoad()
@@ -39,74 +42,56 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     
     @IBAction func SaveButton(sender: AnyObject)
     {
-        let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        var error:NSError?
+
+        
+//        let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        dateFormatter.dateFormat = "MM/dd/yyyy"
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:sssss"
         let date = NSDate()
         let todayDate = dateFormatter.stringFromDate(date)
         
         
         
-        let context : NSManagedObjectContext = app.managedObjectContext
+        let context : NSManagedObjectContext = moContext.managedObjectContext
         let newUser = NSEntityDescription.insertNewObjectForEntityForName("Note", inManagedObjectContext: context) as NSManagedObject
        // newUser.setValue(TitleTextField!.text, forKey: "date")
+        
         newUser.setValue(NoteTextField!.text, forKey: "descrip")
         newUser.setValue(todayDate, forKey: "date")
+        
         do
         {
             try context.save()
+//            var error:NSError?
+
+            if let err = error
+            {
+                let errAlert = UIAlertView(title:"Error",message:err.localizedFailureReason,delegate: nil,cancelButtonTitle:"OK")
+                errAlert.show()
+            }
+            else
+            {
+                let errAlert = UIAlertView(title:"SUCCESS",message:"Your Note is saved",delegate:nil,cancelButtonTitle:"OK")
+                errAlert.show()
+            }
+
         }
         catch
         {
             // handle errorA
         }
         print(newUser)
+        
+
         print("Object Saved.")
         NoteTextField.text = ""
         clear()
-        
-        /*
-        if note == nil
-        {
-            let storeDescription = NSEntityDescription.entityForName("Note", inManagedObjectContext: managedObjectContext)
-            note = Note(entity: storeDescription!, insertIntoManagedObjectContext: managedObjectContext)
-        }
-        
-        //change the date value into string
-        let time = NSDate()
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd HH:mm:sssss"
-        let formatteddate = formatter.stringFromDate(time)
-        
-        note!.descrip = NoteTextField.text!
-        note!.date = formatteddate
-        var error:NSError?
-        do
-        {
-            try note!.managedObjectContext!.save()
-        }
-        catch let error1 as NSError
-        {
-            error = error1
-        }
-        //to check errors
-        if let err = error
-        {
-            let errAlert = UIAlertView(title:"Error",message:err.localizedFailureReason,delegate: nil,cancelButtonTitle:"OK")
-            errAlert.show()
-        }
-        else
-        {
-            let errAlert = UIAlertView(title:"SUCCESS",message:"Your Note is saved",delegate:nil,cancelButtonTitle:"OK")
-            errAlert.show()
-        }
-        NoteTextField.text = ""
-        clear()
- */
     }
     
-    
+            
     func clear()
     {
         NoteTextField.delegate = self

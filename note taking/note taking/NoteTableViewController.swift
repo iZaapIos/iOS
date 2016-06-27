@@ -29,17 +29,6 @@ class NoteTableViewController: UITableViewController
         }
     }
     
-    override func viewDidAppear(animated: Bool)
-    {
-    
-        //whnevr the view appear tble vw reloads.
-        
-        //declaring the error 
-        
-       // self.tableView.reloadData()
-        
-    }
-    
     
     
     //tableview delegates
@@ -56,6 +45,7 @@ class NoteTableViewController: UITableViewController
      override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
      {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        
         let n_note = notes[indexPath.row]
         cell.textLabel!.text = n_note.descrip
         cell.detailTextLabel?.text = n_note.date
