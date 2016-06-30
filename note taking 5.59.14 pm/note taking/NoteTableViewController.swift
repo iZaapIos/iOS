@@ -26,6 +26,7 @@ class NoteTableViewController: UITableViewController
         for n_notes in notes
         {
             print(n_notes.descrip)
+            print(n_notes.content)
         }
     }
     
@@ -48,6 +49,7 @@ class NoteTableViewController: UITableViewController
         
         let n_note = notes[indexPath.row]
         cell.textLabel!.text = n_note.descrip
+         print(n_note.descrip)
         cell.detailTextLabel?.text = n_note.date
         return cell
     }
@@ -55,7 +57,26 @@ class NoteTableViewController: UITableViewController
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         navigationItem.title = nil
+        
+        if segue.identifier! == "editSegue" {
+            let noteDetailViewController = segue.destinationViewController as! NoteDetailViewController
+            let selectedIndexPath = tableView.indexPathForSelectedRow
+            noteDetailViewController.note = notes[selectedIndexPath!.row]
+        } else if segue.identifier! == "viewSegue" {
+            let note = Note()
+            notes.append(note)
+            let noteDetailViewController = segue.destinationViewController as! NoteDetailViewController
+            noteDetailViewController.note = note
+        }
     }
+    
+        
+        override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+            notes.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+
+    
     
 
     override func didReceiveMemoryWarning()

@@ -2,7 +2,7 @@
 //  Note+CoreDataProperties.swift
 //  note taking
 //
-//  Created by Administrator on 20/06/16.
+//  Created by Administrator on 30/06/16.
 //  Copyright © 2016 Administrator. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,7 +14,8 @@ import CoreData
 
 extension Note {
 
-    @NSManaged var descrip: String?
     @NSManaged var date: String?
+    @NSManaged var descrip: String?
+    @NSManaged var content: String?
 
 }

@@ -20,8 +20,6 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     var TextPlaceHolder:UILabel?
     var note:Note?
    
-    //object created to access to the app Delegate
-//    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
         let moContext = UIApplication.sharedApplication().delegate as! AppDelegate
 
@@ -42,11 +40,9 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     
     @IBAction func SaveButton(sender: AnyObject)
     {
-        
-        var error:NSError?
+       var error:NSError?
 
         
-//        let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:sssss"
@@ -57,15 +53,16 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
         
         let context : NSManagedObjectContext = moContext.managedObjectContext
         let newUser = NSEntityDescription.insertNewObjectForEntityForName("Note", inManagedObjectContext: context) as NSManagedObject
-       // newUser.setValue(TitleTextField!.text, forKey: "date")
         
-        newUser.setValue(NoteTextField!.text, forKey: "descrip")
+        newUser.setValue(TitleTextField!.text, forKey: "descrip")
+         print(newUser)
+        
+        newUser.setValue(NoteTextField!.text, forKey: "content")
         newUser.setValue(todayDate, forKey: "date")
         
         do
         {
             try context.save()
-//            var error:NSError?
 
             if let err = error
             {
@@ -87,23 +84,40 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
         
 
         print("Object Saved.")
-        NoteTextField.text = ""
+//        TitleTextField!.text = ""
+//        NoteTextField!.text = ""
         clear()
     }
-    
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        
+//         print(note?.descrip)
+//        TitleTextField!.text = note?.descrip
+//       
+//        
+//       NoteTextField!.text = note?.content
+//    }
+//    
+//    override func viewWillDisappear(animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        
+//        print(note?.descrip)
+//        note!.descrip = TitleTextField!.text!
+//        note!.content = NoteTextField!.text!
+//    }
     
     
     func clear()
     {
-        NoteTextField.delegate = self
+        NoteTextField!.delegate = self
         TextPlaceHolder = UILabel()
         TextPlaceHolder!.text = "Enter Note text here..."
-        TextPlaceHolder!.font = UIFont.italicSystemFontOfSize(NoteTextField.font!.pointSize)
+        TextPlaceHolder!.font = UIFont.italicSystemFontOfSize(NoteTextField!.font!.pointSize)
         TextPlaceHolder!.sizeToFit()
-        NoteTextField.addSubview(TextPlaceHolder!)
-        TextPlaceHolder!.frame.origin = CGPointMake(5, NoteTextField.font!.pointSize / 2)
+        NoteTextField!.addSubview(TextPlaceHolder!)
+        TextPlaceHolder!.frame.origin = CGPointMake(10, NoteTextField!.font!.pointSize / 2)
         TextPlaceHolder!.textColor = UIColor(white: 0, alpha: 0.3)
-        TextPlaceHolder!.hidden = !NoteTextField.text.isEmpty
+        TextPlaceHolder!.hidden = !TitleTextField!.text!.isEmpty
     }
     
     
