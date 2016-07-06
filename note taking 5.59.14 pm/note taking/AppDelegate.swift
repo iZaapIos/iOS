@@ -12,64 +12,62 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var categoryID:String {
-        get{
-            return "COUNTER_CATEGORY"
-        }
-    }
+
 
     var window: UIWindow?
     
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
-        registerNotification()
+
+         setupAppearance()
+        
+        let settings = UIUserNotificationSettings(forTypes:[.Badge, .Alert, .Sound], categories: nil)
+        
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        self.createNotification()
 
         return true
     }
     
-    // Register notification settings
-    func registerNotification() {
+    
+    func setupAppearance() {
         
-        // 2. Create the category ***********************************************
+        let navStyle = UINavigationBar.appearance()
+        navStyle.barTintColor = UIColor.orangeColor()
+        navStyle.tintColor = UIColor.darkGrayColor()
+        navStyle.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.darkGrayColor()]
         
-        // Category
-        let counterCategory = UIMutableUserNotificationCategory()
-        counterCategory.identifier = categoryID
+    }
+    func createNotification()
+    {
+        let notification = UILocalNotification()
+        notification.fireDate = NSDate(timeIntervalSinceNow: 20)
+        notification.applicationIconBadgeNumber = 1
+        notification.soundName = UILocalNotificationDefaultSoundName
         
-        // 3. Notification Registration *****************************************
+        notification.userInfo = [ "message" : " Hey! update your Note for Last 2 Hours" ]
+
+        notification.alertBody = " Hey! update your Note for Last 2 Hours"
         
-        let types: UIUserNotificationType = [UIUserNotificationType.Alert,UIUserNotificationType.Badge, UIUserNotificationType.Sound]
-        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory) as? Set<UIUserNotificationCategory>)
         
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     
-    
-    // Schedule the Notifications with repeat
-    func scheduleNotification() {
-        //UIApplication.sharedApplication().cancelAllLocalNotifications()
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         
-        // Schedule the notification ********************************************
-        if UIApplication.sharedApplication().scheduledLocalNotifications!.count == 0 {
-            
-            let notification = UILocalNotification()
-            notification.alertBody = "Hey! Update your counter ;)"
-            notification.soundName = UILocalNotificationDefaultSoundName
-            notification.fireDate = NSDate()
-            notification.category = categoryID
-            notification.repeatInterval = NSCalendarUnit.Minute
-            
-            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        if application.applicationState == .Active
+        {
+            //means user inside the app
         }
+        
+
     }
     
     
     // MARK: Application Delegate
     
-    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
-        scheduleNotification()
-    }
+    
 
     
 

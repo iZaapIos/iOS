@@ -96,7 +96,6 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.92941182851791382" green="0.83529418706893921" blue="0.65882354974746704" alpha="1" colorSpace="deviceRGB"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="yNa-uY-iMQ" kind="show" identifier="editSegue" id="4ts-sN-MGh"/>
