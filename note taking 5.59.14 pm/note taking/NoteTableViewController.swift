@@ -19,7 +19,7 @@ class NoteTableViewController: UITableViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-       
+  
         let request = NSFetchRequest(entityName:"Note")
         notes  = (try! managedObjectContext.executeFetchRequest(request)) as! [Note]
         NSLog("%@", notes)
@@ -28,26 +28,10 @@ class NoteTableViewController: UITableViewController
             print(n_notes.descrip)
             print(n_notes.content)
         }
+        
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
     }
-    
-    
-//    override func viewWillAppear(animated: Bool) {
-//        
-//        var error:NSError?
-//        
-//        let request = NSFetchRequest(entityName: "Note")
-//        
-//        notes  = (try! managedObjectContext.executeFetchRequest(request)) as! [Note]
-//        
-////        self.tableView.reloadData()
-//        
-//        
-//        
-//    }
-    
 
-    
-    
     
     //tableview delegates
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
@@ -73,7 +57,7 @@ class NoteTableViewController: UITableViewController
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        navigationItem.title = nil
+//        navigationItem.title = nil
         
         if segue.identifier! == "editSegue"
         
@@ -83,13 +67,7 @@ class NoteTableViewController: UITableViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow
             noteDetailViewController.note = notes[selectedIndexPath!.row]
         }
-        else if segue.identifier! == "viewSegue"
-        {
-            let note = Note()
-            notes.append(note)
-            let noteDetailViewController = segue.destinationViewController as! NoteDetailViewController
-            noteDetailViewController.note = note
-        }
+
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {

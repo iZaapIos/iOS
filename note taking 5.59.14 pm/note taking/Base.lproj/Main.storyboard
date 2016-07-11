@@ -18,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your Progress title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QM-E2-XbE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your Progress title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QM-E2-XbE">
                                 <rect key="frame" x="11" y="28" width="299" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.87204234490640842" blue="0.87147847639099019" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-gM-o9P">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-gM-o9P">
                                 <rect key="frame" x="11" y="72" width="299" height="364"/>
                                 <color key="backgroundColor" red="1" green="0.91916475879197013" blue="0.86002135609077457" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="1568" y="-480"/>
         </scene>
-        <!--Note Table View Controller-->
+        <!--Title-->
         <scene sceneID="UDr-Tw-u8I">
             <objects>
                 <tableViewController id="mux-dJ-nOS" customClass="NoteTableViewController" customModule="note_taking" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,7 +74,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.21001299663902384" green="0.76033588207713276" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="BZq-Dg-6l5" detailTextLabel="eYc-Ro-4AX" rowHeight="76" style="IBUITableViewCellStyleSubtitle" id="8CE-LG-isj">
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="BZq-Dg-6l5" detailTextLabel="eYc-Ro-4AX" rowHeight="76" style="IBUITableViewCellStyleSubtitle" id="8CE-LG-isj">
                                 <rect key="frame" x="0.0" y="28" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8CE-LG-isj" id="lCB-S3-uoV">
@@ -108,12 +108,19 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="TMP-Nu-HTH">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="lfL-6I-3XR">
+                            <connections>
+                                <segue destination="yNa-uY-iMQ" kind="show" identifier="addSegue" id="NhI-D1-sGp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcK-rQ-pJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1947" y="-480"/>
+            <point key="canvasLocation" x="1988" y="-496"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="69S-1U-GW4">
@@ -136,6 +143,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4ts-sN-MGh"/>
+        <segue reference="NhI-D1-sGp"/>
     </inferredMetricsTieBreakers>
 </document>

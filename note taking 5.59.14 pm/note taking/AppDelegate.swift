@@ -42,9 +42,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func createNotification()
     {
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: 20)
+        notification.fireDate = NSDate(timeIntervalSinceNow: 1)
         notification.applicationIconBadgeNumber = 1
         notification.soundName = UILocalNotificationDefaultSoundName
+        notification.repeatInterval = NSCalendarUnit.Minute
         
         notification.userInfo = [ "message" : " Hey! update your Note for Last 2 Hours" ]
 
