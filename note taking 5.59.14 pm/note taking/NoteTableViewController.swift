@@ -19,10 +19,13 @@ class NoteTableViewController: UITableViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-  
+        
         let request = NSFetchRequest(entityName:"Note")
         notes  = (try! managedObjectContext.executeFetchRequest(request)) as! [Note]
         NSLog("%@", notes)
+        
+        navigationItem.backBarButtonItem =  nil
+        
         for n_notes in notes
         {
             print(n_notes.descrip)
@@ -57,7 +60,7 @@ class NoteTableViewController: UITableViewController
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-//        navigationItem.title = nil
+//         navigationItem.backBarButtonItem = nil
         
         if segue.identifier! == "editSegue"
         
@@ -90,12 +93,94 @@ class NoteTableViewController: UITableViewController
         }
     }
     
-        
+//        
+//    func filterNotes(searchText: String)
+//    {
+//        
+//        
+//        
+//        var error:NSError?
+//        
+//        let request = NSFetchRequest(entityName: "Note")
+//        
+//        let predicate = NSPredicate(format: "descrip  contains %@", searchText)
+//        
+//        request.predicate = predicate
+//        
+//        notes  = (try! managedObjectContext.executeFetchRequest(request)) as! [Note]
+//        
+//        self.tableView.reloadData()
+//        
+//        
+//        // let predicate1 = NSCompoundPredicate(type: NSCompoundPredicateType.OrPredicateType, subpredicates: [predicate, predicate])
+//        
+//        
+//        
+//        
+//    }
+//    
+//    
+//    /******************************************************************************
+//     *
+//     * This function Display Action Controller to get the store name
+//     *
+//     ******************************************************************************/
+//    
+//    
+//    
+//    
+//    @IBAction func searchRecords(sender: AnyObject) {
+//        
+//        
+//        
+//        
+//        // create the alert controller
+//        
+//        let v = UIAlertController(title: "Search", message: "Enter enter part of store name", preferredStyle: UIAlertControllerStyle.Alert)
+//        
+//        
+//        // Add the text field
+//        
+//        v.addTextFieldWithConfigurationHandler { (storeName:UITextField!) -> Void in
+//            
+//            storeName.placeholder = "Store Name"
+//            
+//        }
+//        
+//        
+//        // Create the button - Alert Action
+//        
+//        let okAc = UIAlertAction(title: "Search", style: UIAlertActionStyle.Default)
+//            { (alert: UIAlertAction) in
+//                
+//                let storeName = v.textFields![0]
+//                
+//                self.filterNotes(storeName.text!)
+//                
+//                v.dismissViewControllerAnimated(true, completion: nil)
+//        }
+//        
+//        
+//        // Add it to the controller
+//        
+//        v.addAction(okAc)
+//        
+//        
+//        // only one cancel action style allowed
+//        
+//        let cancelAc = UIAlertAction(title: "cancel", style: UIAlertActionStyle.Cancel) { (alert: UIAlertAction) in
+//            
+//            v.dismissViewControllerAnimated(true, completion: nil)
+//            
+//        }
+//        
+//        v.addAction(cancelAc)
+//        
+//        presentViewController(v, animated: true , completion: nil)
+//        
+//        
+//    }
+    
 
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 

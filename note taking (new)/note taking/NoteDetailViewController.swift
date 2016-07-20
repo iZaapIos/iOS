@@ -20,7 +20,6 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     var TextPlaceHolder:UILabel?
     var note:Note?
     var error:NSError?
-
     
         let moContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
@@ -28,6 +27,9 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        UIApplication.sharedApplication().sendAction("resignFirstResponder", to:nil, from:nil, forEvent:nil)
+        self.view.endEditing(true)
+          
         
         
        if let n = note
@@ -49,105 +51,29 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     @IBAction func SaveButton(sender: AnyObject)
     {
         if note != nil {
-        editItem()
-    } else {
-        createNewItem()
+            editItem()
+        } else {
+            createNewItem()
         }
         
         TitleTextField!.text = ""
         NoteTextField!.text = ""
         clear()
     }
-    
+
         
         
         
         
         
-        
-        
-        
-//       var error:NSError?
-//
-//        
-//        let dateFormatter = NSDateFormatter()
-//        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-//        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:sssss"
-//        let date = NSDate()
-//        let todayDate = dateFormatter.stringFromDate(date)
-        
-// old part
-        
-//        let context : NSManagedObjectContext = moContext.managedObjectContext
-//        
-//        //Ns object created to insert the data into coredata
-//        let newUser = NSEntityDescription.insertNewObjectForEntityForName("Note", inManagedObjectContext: context) as NSManagedObject
-//        }
-//        
-//        //assigning the entered value to the field in the DB
-//        newUser.setValue(TitleTextField!.text, forKey: "descrip")
-//         print(newUser)
-//        
-//        newUser.setValue(NoteTextField!.text, forKey: "content")
-//        newUser.setValue(todayDate, forKey: "date")
-        
-        // end of old part
-//
-//        if note == nil
-//        {
-//        
-//            let noteDescription = NSEntityDescription.entityForName("Note", inManagedObjectContext: moContext)
-//            
-//            
-//            // Then, We Create the Managed Object to be  inserted into the cored data
-//          note = Note(entity: noteDescription!, insertIntoManagedObjectContext: moContext)
-//
-//        }
-//    
-//        
-//  
-//        note?.setValue(TitleTextField!.text, forKey: "descrip")
-//        note?.setValue(NoteTextField!.text, forKey: "content")
-//        note?.setValue(todayDate, forKey: "date")
-//
-//        
-//        do
-//        {
-//            try moContext.save()
-//
-//            if let err = error
-//            {
-//                let errAlert = UIAlertView(title:"Error",message:err.localizedFailureReason,delegate: nil,cancelButtonTitle:"OK")
-//                errAlert.show()
-//            }
-//            else
-//            {
-//                let errAlert = UIAlertView(title:"SUCCESS",message:"Your Note is saved",delegate:nil,cancelButtonTitle:"OK")
-//                errAlert.show()
-//            }
-//
-//        }
-//        catch
-//        {
-//            // handle errorA
-//        }
-////        print(newUser)
-//        
-//
-//        print("Object Saved.")
-//        TitleTextField!.text = ""
-//        NoteTextField!.text = ""
-//        clear()
-//    }
-    
     func createNewItem() {
         
-          var error:NSError?
+//        var error:NSError?
         
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:sssss"
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
         let date = NSDate()
         let todayDate = dateFormatter.stringFromDate(date)
         
@@ -160,20 +86,21 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
         note.content = NoteTextField.text
         note.setValue(todayDate, forKey: "date")
         
+        print(note.descrip)
+        
         do {
             try moContext.save()
             
-        if let err = error
+            if let err = error
             {
-            let errAlert = UIAlertView(title:"Error",message:err.localizedFailureReason,delegate: nil,cancelButtonTitle:"OK")
-                            errAlert.show()
+                let errAlert = UIAlertView(title:"Error",message:err.localizedFailureReason,delegate: nil,cancelButtonTitle:"OK")
+                errAlert.show()
             }
             else
             {
-            let errAlert = UIAlertView(title:"SUCCESS",message:"Your Note is saved",delegate:nil,cancelButtonTitle:"OK")
+                let errAlert = UIAlertView(title:"SUCCESS",message:"Your Note is saved",delegate:nil,cancelButtonTitle:"OK")
                 errAlert.show()
-                self.hideKB(self)
-}
+                           }
         } catch {
             return
         }
@@ -182,16 +109,20 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     
     func editItem() {
         
+//        var error:NSError?
+        
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:sssss"
         let date = NSDate()
         let todayDate = dateFormatter.stringFromDate(date)
         
-
+        
         note!.descrip = TitleTextField.text
         note!.content = NoteTextField.text
         note!.setValue(todayDate, forKey: "date")
+        
+        print(note!.descrip)
         do {
             try moContext.save()
             if let err = error
@@ -204,29 +135,14 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
                 let errAlert = UIAlertView(title:"UPDATE",message:"Your Note is Edited",delegate:nil,cancelButtonTitle:"OK")
                 errAlert.show()
                 self.hideKB(self)
-
+                
             }
-
+            
         } catch {
             return
         }
         
     }
-    
-    @IBAction func hideKB(sender: AnyObject) {
-        
-        
-        for v in self.view.subviews
-        {
-            if v.isKindOfClass(UITextField)
-            {
-                v.resignFirstResponder()
-            }
-            
-        }
-        
-    }
-
 
     func clear()
     {
@@ -246,8 +162,22 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
     {
         TextPlaceHolder!.hidden = !textView.text.isEmpty
     }
+    
+    
+    
+    @IBAction func hideKB(sender: AnyObject) {
+        
+        
+        for v in self.view.subviews
+        {
+            if v.isKindOfClass(UITextView)
+            {
+                v.resignFirstResponder()
+            }
+            
+        }
 }
-
+}
     
 
 
