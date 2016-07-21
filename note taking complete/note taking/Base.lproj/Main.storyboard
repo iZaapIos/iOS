@@ -9,7 +9,7 @@
         <!--Title-->
         <scene sceneID="dqh-D5-RW3">
             <objects>
-                <viewController id="yNa-uY-iMQ" customClass="NoteDetailViewController" customModule="note_taking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableVC" id="yNa-uY-iMQ" customClass="NoteDetailViewController" customModule="note_taking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qLH-VE-Ko3"/>
                         <viewControllerLayoutGuide type="bottom" id="vYN-s3-y5Y"/>
@@ -18,11 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-gM-o9P">
-                                <rect key="frame" x="11" y="108" width="299" height="364"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your Progress title" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="7QM-E2-XbE">
+                                <rect key="frame" x="11" y="72" width="299" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.87204234490640842" blue="0.87147847639099019" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-gM-o9P">
+                                <rect key="frame" x="11" y="110" width="299" height="364"/>
                                 <color key="backgroundColor" red="1" green="0.91916475879197013" blue="0.86002135609077457" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="364" id="7yS-Qw-Uy3"/>
                                     <constraint firstAttribute="height" constant="364" id="ecN-iu-3xQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -33,24 +38,19 @@
                                     </mask>
                                 </variation>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your Progress title" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="7QM-E2-XbE">
-                                <rect key="frame" x="11" y="60" width="299" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.87204234490640842" blue="0.87147847639099019" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.36061866095282269" green="0.78539459784898158" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ts2-gM-o9P" firstAttribute="leading" secondItem="Jfs-EO-CQH" secondAttribute="leadingMargin" constant="-5" id="1Kj-80-tE0"/>
-                            <constraint firstItem="ts2-gM-o9P" firstAttribute="top" secondItem="7QM-E2-XbE" secondAttribute="bottom" constant="18" id="5a3-fA-HFK"/>
-                            <constraint firstItem="ts2-gM-o9P" firstAttribute="trailing" secondItem="7QM-E2-XbE" secondAttribute="trailing" id="ERF-Zy-Z8j"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ts2-gM-o9P" secondAttribute="bottom" constant="6" id="C5A-DE-5TH"/>
                             <constraint firstItem="ts2-gM-o9P" firstAttribute="top" secondItem="7QM-E2-XbE" secondAttribute="bottom" constant="18" id="Hmf-8E-5JN"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ts2-gM-o9P" secondAttribute="bottom" constant="8" id="MdA-Xp-Yv7"/>
                             <constraint firstAttribute="bottomMargin" secondItem="ts2-gM-o9P" secondAttribute="bottom" constant="8" id="NYm-md-jKs"/>
                             <constraint firstItem="7QM-E2-XbE" firstAttribute="top" secondItem="qLH-VE-Ko3" secondAttribute="bottom" constant="50" id="O45-1b-5L5"/>
-                            <constraint firstItem="ts2-gM-o9P" firstAttribute="leading" secondItem="7QM-E2-XbE" secondAttribute="leading" id="hgJ-lo-Jod"/>
-                            <constraint firstItem="ts2-gM-o9P" firstAttribute="centerX" secondItem="Jfs-EO-CQH" secondAttribute="centerX" id="ogz-bc-b2h"/>
+                            <constraint firstItem="ts2-gM-o9P" firstAttribute="leading" secondItem="Jfs-EO-CQH" secondAttribute="leadingMargin" constant="-5" id="SNM-J0-4lR"/>
+                            <constraint firstItem="7QM-E2-XbE" firstAttribute="top" secondItem="qLH-VE-Ko3" secondAttribute="bottom" constant="8" symbolic="YES" id="XzL-db-aqQ"/>
+                            <constraint firstItem="ts2-gM-o9P" firstAttribute="top" secondItem="7QM-E2-XbE" secondAttribute="bottom" constant="8" symbolic="YES" id="dxh-uL-Cqv"/>
+                            <constraint firstItem="ts2-gM-o9P" firstAttribute="trailing" secondItem="7QM-E2-XbE" secondAttribute="trailing" id="ecC-Pc-fOd"/>
+                            <constraint firstItem="ts2-gM-o9P" firstAttribute="centerX" secondItem="Jfs-EO-CQH" secondAttribute="centerX" id="fKs-mQ-KzQ"/>
+                            <constraint firstItem="ts2-gM-o9P" firstAttribute="leading" secondItem="7QM-E2-XbE" secondAttribute="leading" id="nRI-Gw-id7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -80,29 +80,29 @@
         <!--Add Note-->
         <scene sceneID="UDr-Tw-u8I">
             <objects>
-                <tableViewController id="mux-dJ-nOS" customClass="NoteTableViewController" customModule="note_taking" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" id="6mU-Yt-tee">
+                <tableViewController storyboardIdentifier="ContentVC" id="mux-dJ-nOS" customClass="NoteTableViewController" customModule="note_taking" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6mU-Yt-tee">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.21001299663902384" green="0.76033588207713276" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="BZq-Dg-6l5" detailTextLabel="eYc-Ro-4AX" rowHeight="76" style="IBUITableViewCellStyleSubtitle" id="8CE-LG-isj">
-                                <rect key="frame" x="0.0" y="92" width="320" height="76"/>
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="BZq-Dg-6l5" detailTextLabel="eYc-Ro-4AX" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="8CE-LG-isj">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8CE-LG-isj" id="lCB-S3-uoV">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BZq-Dg-6l5">
-                                            <rect key="frame" x="15" y="19" width="43" height="24"/>
+                                            <rect key="frame" x="15" y="3" width="43" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eYc-Ro-4AX">
-                                            <rect key="frame" x="15" y="43" width="41" height="14"/>
+                                            <rect key="frame" x="15" y="27" width="41" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
                                             <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,6 +122,11 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add Note" id="TMP-Nu-HTH">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="0OM-Fo-6tg">
+                            <connections>
+                                <action selector="searchRecords:" destination="mux-dJ-nOS" id="uvA-qP-HuA"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="lfL-6I-3XR">
                             <connections>
                                 <segue destination="yNa-uY-iMQ" kind="show" identifier="addSegue" id="NeN-Jr-TYL"/>

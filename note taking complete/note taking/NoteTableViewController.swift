@@ -15,21 +15,30 @@ class NoteTableViewController: UITableViewController
     let moContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     var notes = [Note]()
+    var filtrdNotes = [String]()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-  
+
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
         let request = NSFetchRequest(entityName:"Note")
         notes  = (try! moContext.executeFetchRequest(request)) as! [Note]
         NSLog("%@", notes)
+        
+        navigationItem.backBarButtonItem =  nil
+        
         for n_notes in notes
         {
             print(n_notes.descrip)
             print(n_notes.content)
         }
+        self.tableView.reloadData()
         
-        self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
     }
 
     
@@ -41,8 +50,7 @@ class NoteTableViewController: UITableViewController
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return notes.count
-        print(notes.count)
+         return self.notes.count
     }
     
      override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
@@ -51,10 +59,12 @@ class NoteTableViewController: UITableViewController
         
         let n_note = notes[indexPath.row]
         cell.textLabel!.text = n_note.descrip
-         print(n_note.descrip)
+        print(n_note.descrip)
         cell.detailTextLabel?.text = n_note.date
         return cell
     }
+    
+    // code for segue
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
@@ -91,12 +101,10 @@ class NoteTableViewController: UITableViewController
     }
     
         
-
+// to search the note by title
     
     func filterNotes(searchText: String)
     {
-        
-        
         
         var error:NSError?
         
@@ -110,35 +118,22 @@ class NoteTableViewController: UITableViewController
         
         self.tableView.reloadData()
         
-        
-        // let predicate1 = NSCompoundPredicate(type: NSCompoundPredicateType.OrPredicateType, subpredicates: [predicate, predicate])
     }
-    
-    
-    /******************************************************************************
-     *
-     * This function Display Action Controller to get the store name
-     *
-     ******************************************************************************/
-    
-    
-    
+
+
     
     @IBAction func searchRecords(sender: AnyObject) {
         
-        
-        
-        
         // create the alert controller
         
-        let v = UIAlertController(title: "Search", message: "Enter enter part of store name", preferredStyle: UIAlertControllerStyle.Alert)
+        let SearchAlert = UIAlertController(title: "Search", message: "Enter enter part of note name", preferredStyle: UIAlertControllerStyle.Alert)
         
         
         // Add the text field
         
-        v.addTextFieldWithConfigurationHandler { (storeName:UITextField!) -> Void in
+        SearchAlert.addTextFieldWithConfigurationHandler { (noteName:UITextField!) -> Void in
             
-            storeName.placeholder = "Store Name"
+            noteName.placeholder = "Note Title"
             
         }
         
@@ -148,30 +143,30 @@ class NoteTableViewController: UITableViewController
         let okAc = UIAlertAction(title: "Search", style: UIAlertActionStyle.Default)
             { (alert: UIAlertAction) in
                 
-                let storeName = v.textFields![0]
+                let noteName = SearchAlert.textFields![0]
                 
-                self.filterNotes(storeName.text!)
+                self.filterNotes(noteName.text!)
                 
-                v.dismissViewControllerAnimated(true, completion: nil)
+                SearchAlert.dismissViewControllerAnimated(true, completion: nil)
         }
         
         
         // Add it to the controller
         
-        v.addAction(okAc)
+        SearchAlert.addAction(okAc)
         
         
         // only one cancel action style allowed
         
         let cancelAc = UIAlertAction(title: "cancel", style: UIAlertActionStyle.Cancel) { (alert: UIAlertAction) in
             
-            v.dismissViewControllerAnimated(true, completion: nil)
+            SearchAlert.dismissViewControllerAnimated(true, completion: nil)
             
         }
         
-        v.addAction(cancelAc)
+        SearchAlert.addAction(cancelAc)
         
-        presentViewController(v, animated: true , completion: nil)
+        presentViewController(SearchAlert, animated: true , completion: nil)
         
         
     }
