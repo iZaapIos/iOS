@@ -11,6 +11,8 @@ import Firebase
 
 class DescViewController: UIViewController,UITextViewDelegate {
     
+//    var note:Note?
+    
     @IBOutlet weak var TitleTextField: UITextField!
     
     @IBOutlet weak var ContentTextField: UITextView!
@@ -32,17 +34,36 @@ class DescViewController: UIViewController,UITextViewDelegate {
     @IBAction func save_action(sender: AnyObject)
     {
         
+        
+////        var interval = Double()
+//        var date = NSDate()
+////        date = NSDate(timeIntervalSince1970: interval)
+//        
         let title = TitleTextField.text
         let content = ContentTextField.text
+//        let interval = date.timeIntervalSince1970
+//        
+//        let todaydate = formatDate(interval)
         
-//        let note: NSDictionary = ["title":title!,"time":savedTime,"content":content]
-        let note: NSDictionary = ["title":title!,"content":content]
+        
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+        let date = NSDate()
+        let todayDate = dateFormatter.stringFromDate(date)
+        
+        
+        
+        let note: NSDictionary = ["title":title!,"content":content,"date":todayDate]
         
         
         
         //add firebase child node
         let profile = rootRef.childByAppendingPath(title!)
         rootRef.childByAppendingPath("content")
+        rootRef.childByAppendingPath("date")
+
         
         profile.setValue(note)
 //        profile.setValue(todayDate, forKey: "time")

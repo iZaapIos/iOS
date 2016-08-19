@@ -17,6 +17,8 @@ class TblViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -57,11 +59,13 @@ class TblViewController: UITableViewController {
             let dict = items[indexPath.row]
             let title = dict["title"] as! String
             let content = dict["content"] as! String
+            let date = dict["date"] as! String
             
             // delete data from firebase
             
          let  profile = rootRef.childByAppendingPath(title)
              rootRef.childByAppendingPath(content)
+            rootRef.childByAppendingPath(date)
             profile.removeValue()
         }
     }
@@ -72,7 +76,7 @@ class TblViewController: UITableViewController {
         let dict = items[indexPath.row]
         
         cell.textLabel?.text = dict["title"] as? String
-        cell.detailTextLabel?.text = dict["content"] as? String
+        cell.detailTextLabel?.text = dict["date"] as? String
         
 //        let TimeInterval = dict["savedTime"] as! NSTimeInterval
 //        populateTimeInterval(cell, timeInterval: TimeInterval)
@@ -90,21 +94,21 @@ class TblViewController: UITableViewController {
 //    }
     
     
-    // MARK:- Apply TableViewCell Style
+    // code for segue
     
-//    func tableViewStyle(cell: UITableViewCell) {
-//        cell.contentView.backgroundColor = backgroundColor
-//        cell.backgroundColor = backgroundColor
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+//    {
+//        navigationItem.title = nil
 //        
-//        cell.textLabel?.font =  UIFont(name: "HelveticaNeue-Medium", size: 15)
-//        cell.textLabel?.textColor = textColor
-//        cell.textLabel?.backgroundColor = backgroundColor
-//        
-//        cell.detailTextLabel?.font = UIFont.boldSystemFontOfSize(15)
-//        cell.detailTextLabel?.textColor = UIColor.grayColor()
-//        cell.detailTextLabel?.backgroundColor = backgroundColor
+//        if segue.identifier! == "editSegue"
+//            
+//        {
+//            let noteDetailViewController = segue.destinationViewController as! DescViewController
+//            
+//            let selectedIndexPath = self.tableView.indexPathForSelectedRow
+//            noteDetailViewController.rootRef = items[selectedIndexPath!.row] as! NSData
+//        }
 //    }
-    
     // MARK:- Load data from Firebase
     
     func loadDataFromFirebase() {
