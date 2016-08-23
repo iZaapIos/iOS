@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>783474826984-glna73gl4rt6gip701p7kctev5qtp3ju.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.783474826984-glna73gl4rt6gip701p7kctev5qtp3ju</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDhYc400V_SZIVVV-X0aDLAE7ZXCUL2Q1A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>783474826984</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.FanthemLLC.Progress-App</string>
+	<key>PROJECT_ID</key>
+	<string>progress-app-5e2fe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>progress-app-5e2fe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:783474826984:ios:3ddb88290cd8aafa</string>
+	<key>DATABASE_URL</key>
+	<string>https://progress-app-5e2fe.firebaseio.com</string>
+</dict>
+</plist>
