@@ -15,7 +15,8 @@ class TblViewController: UITableViewController {
     var rootRef = FIRDatabase.database().reference()
 //    var items = [NSDictionary]()
     var items  = []
-    override func viewDidLoad() {
+    
+       override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
@@ -109,17 +110,17 @@ class TblViewController: UITableViewController {
     
     // code for segue
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "editSegue" {
-            let destination = segue.destinationViewController as? DescViewController
-            let cell = sender as! UITableViewCell
-            let selectedRow = tableView.indexPathForCell(cell)!.row
-            
-            print(items[selectedRow])
-            
-            destination!.selectedValue = items[selectedRow] as! NSString as! NSString
-        }
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "editSegue" {
+//            let destination = segue.destinationViewController as? DescViewController
+//            let cell = sender as! UITableViewCell
+//            let selectedRow = tableView.indexPathForCell(cell)!.row
+//            
+//            print(items[selectedRow])
+//            
+////            destination!.selectedValue = items[selectedRow] as! NSString as! NSString
+//        }
+//    }
     // MARK:- Load data from Firebase
     
     func loadDataFromFirebase() {
@@ -140,6 +141,7 @@ class TblViewController: UITableViewController {
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             
         })
+        
     }
 
 

@@ -17,7 +17,6 @@
 		1F4E938B1D59EA87009B45FA /* Progress_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E938A1D59EA87009B45FA /* Progress_AppTests.swift */; };
 		1F4E93961D59EA88009B45FA /* Progress_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E93951D59EA88009B45FA /* Progress_AppUITests.swift */; };
 		1F4E93A41D59F249009B45FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E93A31D59F246009B45FA /* GoogleService-Info.plist */; };
-		1F5299031D65E4FF001C2069 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5299021D65E4FC001C2069 /* AppIcon29x29@2x.png */; };
 		1F5299051D65E635001C2069 /* dp-notepad-and-pencil-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5299041D65E634001C2069 /* dp-notepad-and-pencil-icon.png */; };
 		9AF29AF10A48D68F8ED16312 /* Pods_Progress_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7858A2F9D06AB53F4F5C3AEA /* Pods_Progress_App.framework */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		1F4E93951D59EA88009B45FA /* Progress_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress_AppUITests.swift; sourceTree = "<group>"; };
 		1F4E93971D59EA89009B45FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F4E93A31D59F246009B45FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1F5299021D65E4FC001C2069 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon29x29@2x.png"; path = "Assets.xcassets/AppIcon.appiconset/AppIcon29x29@2x.png"; sourceTree = "<group>"; };
 		1F5299041D65E634001C2069 /* dp-notepad-and-pencil-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dp-notepad-and-pencil-icon.png"; sourceTree = "<group>"; };
 		510CE734A82827748F811021 /* Pods-Progress-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Progress-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Progress-App/Pods-Progress-App.release.xcconfig"; sourceTree = "<group>"; };
 		7858A2F9D06AB53F4F5C3AEA /* Pods_Progress_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Progress_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +117,6 @@
 				1F4E93721D59EA75009B45FA /* AppDelegate.swift */,
 				1F4E93741D59EA76009B45FA /* TblViewController.swift */,
 				1F2EB25C1D5B54AF007790B4 /* DescViewController.swift */,
-				1F5299021D65E4FC001C2069 /* AppIcon29x29@2x.png */,
 				1F4E93761D59EA77009B45FA /* Main.storyboard */,
 				1F4E937C1D59EA7E009B45FA /* Assets.xcassets */,
 				1F4E937E1D59EA7F009B45FA /* LaunchScreen.storyboard */,
@@ -276,7 +273,6 @@
 			files = (
 				1F4E93801D59EA7F009B45FA /* LaunchScreen.storyboard in Resources */,
 				1F5299051D65E635001C2069 /* dp-notepad-and-pencil-icon.png in Resources */,
-				1F5299031D65E4FF001C2069 /* AppIcon29x29@2x.png in Resources */,
 				1F4E93A41D59F249009B45FA /* GoogleService-Info.plist in Resources */,
 				1F4E937D1D59EA7F009B45FA /* Assets.xcassets in Resources */,
 				1F4E93781D59EA78009B45FA /* Main.storyboard in Resources */,

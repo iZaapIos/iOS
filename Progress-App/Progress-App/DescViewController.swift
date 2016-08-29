@@ -11,7 +11,7 @@ import Firebase
 
 class DescViewController: UIViewController,UITextViewDelegate {
     
-    var selectedValue :NSString = ""
+//    var selectedValue :NSString = ""
         var TextPlaceHolder:UILabel?
 
     @IBOutlet weak var TitleTextField: UITextField!
