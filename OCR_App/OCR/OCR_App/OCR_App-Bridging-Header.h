@@ -1,0 +1,3 @@
+
+
+#import <TesseractOCR/TesseractOCR.h>
