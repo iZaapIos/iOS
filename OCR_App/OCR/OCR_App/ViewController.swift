@@ -119,6 +119,7 @@ class ViewController: UIViewController,UITextViewDelegate, UINavigationControlle
             // Save The object
             
             try moContext.save()
+            
         } catch var error1 as NSError {
             error = error1
         }
@@ -134,6 +135,8 @@ class ViewController: UIViewController,UITextViewDelegate, UINavigationControlle
         } else {
             
             let a = UIAlertView(title: "Success", message: "Your Text is saved", delegate: nil, cancelButtonTitle: "OK")
+            print(text!.retreivedText)
+
             a.show()
         }
         
@@ -174,7 +177,7 @@ class ViewController: UIViewController,UITextViewDelegate, UINavigationControlle
             RecognizedTextView.text = tesseract.recognizedText
             RecognizedTextView.editable = true
             // 8
-//            removeActivityIndicator()
+
         }
     }
 

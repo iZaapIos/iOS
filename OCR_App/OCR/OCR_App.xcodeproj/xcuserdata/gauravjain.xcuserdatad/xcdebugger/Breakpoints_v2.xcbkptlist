@@ -26,7 +26,7 @@
                   moduleName = "OCR_App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/gauravjain/Desktop/myprojects/OCR_App/OCR/OCR_App/ViewController.swift"
-                  timestampString = "494499566.817895"
+                  timestampString = "494852691.711626"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -41,7 +41,7 @@
                   moduleName = "OCR_App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/gauravjain/Desktop/myprojects/OCR_App/OCR/OCR_App/ViewController.swift"
-                  timestampString = "494499566.932366"
+                  timestampString = "494852691.836352"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -56,7 +56,7 @@
                   moduleName = "OCR_App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/gauravjain/Desktop/myprojects/OCR_App/OCR/OCR_App/ViewController.swift"
-                  timestampString = "494499566.933078"
+                  timestampString = "494852691.836776"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -64,6 +64,38 @@
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OCR_App/ViewController.swift"
+            timestampString = "494849857.739808"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "SaveText(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DisplayViewController.swift"
+            timestampString = "494852477.52349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

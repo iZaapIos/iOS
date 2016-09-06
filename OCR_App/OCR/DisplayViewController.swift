@@ -11,38 +11,34 @@ import CoreData
 
 class DisplayViewController: UIViewController, NSFetchedResultsControllerDelegate {
     
-    @IBOutlet weak var DisplayText: UILabel!
+    @IBOutlet weak var DisplayText: UITextView!
     
-    var t_txt = [Text]()
+    var txt = [Text]()
     
     let moContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     
-    var fetchedResultController: NSFetchedResultsController = NSFetchedResultsController()
 
-    override func viewWillAppear(animated: Bool)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    
+       
+        let fetchRequest = NSFetchRequest(entityName: "Text")
         
-    {
-        fetchedResultController = getFetchedResultController()
-        fetchedResultController.delegate = self
-        do {
-            try fetchedResultController.performFetch()
-        } catch _ {
-        }
+        
+        let request = NSFetchRequest(entityName:"Text")
+        txt  = (try! moContext.executeFetchRequest(request)) as! [Text]
+        
+            for t_txt in txt
+            {
+                print(t_txt)
+                DisplayText.text = t_txt.retreivedText
+            }
+        
     }
+
     
-    
-    func getFetchedResultController() ->NSFetchedResultsController {
-    fetchedResultController = NSFetchedResultsController(fetchRequest: taskFetchRequest(), managedObjectContext: moContext, sectionNameKeyPath: nil, cacheName: nil)
-    return fetchedResultController
-    }
-    
-    
-    func taskFetchRequest()->NSFetchRequest {
-    let fetchRequest = NSFetchRequest(entityName: "Text")
-    let sortDescriptor = NSSortDescriptor(key: "retreivedText", ascending: true)
-    fetchRequest.sortDescriptors = [sortDescriptor]
-    return fetchRequest
-    }
 
 }
