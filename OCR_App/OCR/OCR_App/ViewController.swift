@@ -12,17 +12,20 @@ import CoreData
 class ViewController: UIViewController,UITextViewDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var RecognizedTextView: UITextView!
-    var activityIndicator:UIActivityIndicatorView!
 
     var text:Text?
     var error:NSError?
-//    
-//    let moContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-
-
+    
+    let moContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        if let txt = text
+        {
+            RecognizedTextView.text = txt.retreivedText
+        }
         
     }
          @IBAction func TakePhoto(sender: AnyObject)
@@ -30,7 +33,7 @@ class ViewController: UIViewController,UITextViewDelegate, UINavigationControlle
         
         // 1
         view.endEditing(true)
-//        moveViewDown()
+
         // 2
         let imagePickerActionSheet = UIAlertController(title: "click/pick Photo",
             message: nil, preferredStyle: .ActionSheet)
@@ -93,46 +96,49 @@ class ViewController: UIViewController,UITextViewDelegate, UINavigationControlle
         return scaledImage
     }
 
-//
-//    @IBAction func SaveText(sender: AnyObject)
-//    {
-//        let storeDescription = NSEntityDescription.entityForName("Note", inManagedObjectContext: moContext)
-//        
-//        
-//        // Then, We Create the Managed Object to be  inserted into the cored data
-//       text = Text(entity: storeDescription!, insertIntoManagedObjectContext: moContext)
-//    
-//    
-//    // set the attributes
-//    text!.retreivedText = RecognizedTextView.text
-//        
-//        var error: NSError?
-//        
-//        
-//        do {
-//            // Save The object
-//            
-//            try moContext.save()
-//        } catch var error1 as NSError {
-//            error = error1
-//        }
-//        
-//        
-//        //Check if there is any erros
-//        
-//        if let err = error {
-//            
-//            let a = UIAlertView(title: "Error", message: err.localizedFailureReason, delegate: nil, cancelButtonTitle: "OK")
-//            a.show()
-//            
-//        } else {
-//            
-//            let a = UIAlertView(title: "Success", message: "Your Text is saved", delegate: nil, cancelButtonTitle: "OK")
-//            a.show()
-//        }
-//        
-//    
-//    }
+
+    @IBAction func SaveText(sender: AnyObject)
+    {
+    
+        if text == nil
+       {
+        let textDescription = NSEntityDescription.entityForName("Text", inManagedObjectContext: moContext)
+        
+        
+        // Then, We Create the Managed Object to be  inserted into the cored data
+       text = Text(entity: textDescription!, insertIntoManagedObjectContext: moContext)
+       }
+    
+    // set the attributes
+    text!.retreivedText = RecognizedTextView.text
+        
+        var error: NSError?
+        
+        
+        do {
+            // Save The object
+            
+            try moContext.save()
+        } catch var error1 as NSError {
+            error = error1
+        }
+        
+        
+        //Check if there is any erros
+        
+        if let err = error {
+            
+            let a = UIAlertView(title: "Error", message: err.localizedFailureReason, delegate: nil, cancelButtonTitle: "OK")
+            a.show()
+            
+        } else {
+            
+            let a = UIAlertView(title: "Success", message: "Your Text is saved", delegate: nil, cancelButtonTitle: "OK")
+            a.show()
+        }
+        
+    
+    }
 
 }
     extension ViewController: UIImagePickerControllerDelegate

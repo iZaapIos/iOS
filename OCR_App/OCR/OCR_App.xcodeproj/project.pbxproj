@@ -21,6 +21,7 @@
 		1F731DF41D76E010004EAD75 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 1F731DF31D76E010004EAD75 /* tessdata */; };
 		1F731DF71D76EA4A004EAD75 /* Text+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F731DF51D76EA49004EAD75 /* Text+CoreDataProperties.swift */; };
 		1F731DF81D76EA4A004EAD75 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F731DF61D76EA4A004EAD75 /* Text.swift */; };
+		1F8B2BB41D797DC300F50C2E /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B2BB31D797DC000F50C2E /* DisplayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		1F731DF31D76E010004EAD75 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		1F731DF51D76EA49004EAD75 /* Text+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1F731DF61D76EA4A004EAD75 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		1F8B2BB31D797DC000F50C2E /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		1F5B45BD1D75ADA00060F940 = {
 			isa = PBXGroup;
 			children = (
+				1F8B2BB31D797DC000F50C2E /* DisplayViewController.swift */,
 				1F731DF51D76EA49004EAD75 /* Text+CoreDataProperties.swift */,
 				1F731DF61D76EA4A004EAD75 /* Text.swift */,
 				1F731DE31D76B6AE004EAD75 /* CoreImage.framework */,
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F731DF71D76EA4A004EAD75 /* Text+CoreDataProperties.swift in Sources */,
+				1F8B2BB41D797DC300F50C2E /* DisplayViewController.swift in Sources */,
 				1F731DF81D76EA4A004EAD75 /* Text.swift in Sources */,
 				1F5B45CC1D75ADA10060F940 /* ViewController.swift in Sources */,
 				1F5B45D21D75ADA30060F940 /* OCR_App.xcdatamodeld in Sources */,

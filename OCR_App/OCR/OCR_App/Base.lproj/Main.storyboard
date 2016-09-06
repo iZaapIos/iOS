@@ -48,6 +48,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SaveText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ttf-1x-p5K"/>
+                                    <segue destination="zRj-AY-2K9" kind="show" id="KEL-Sa-iVY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,7 +61,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368" y="62"/>
+            <point key="canvasLocation" x="123" y="-34"/>
+        </scene>
+        <!--Display View Controller-->
+        <scene sceneID="z1m-Lc-wof">
+            <objects>
+                <viewController id="zRj-AY-2K9" customClass="DisplayViewController" customModule="OCR_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wa8-sf-IU0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ixy-bN-J2g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tbS-Qj-aw6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsX-DJ-day">
+                                <rect key="frame" x="20" y="92" width="280" height="337"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76112821740000003" green="0.94966871340000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="DisplayText" destination="BsX-DJ-day" id="eI3-ep-Bd3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wH7-57-dEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="-34"/>
         </scene>
     </scenes>
 </document>
