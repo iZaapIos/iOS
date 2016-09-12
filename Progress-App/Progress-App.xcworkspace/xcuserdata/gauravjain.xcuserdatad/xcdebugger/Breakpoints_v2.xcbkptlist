@@ -6,141 +6,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress-App/TblViewController.swift"
-            timestampString = "493554347.645127"
+            timestampString = "495373391.917778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "TblViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Progress_App.TblViewController.items.getter : __ObjC.NSArray"
-                  moduleName = "Progress-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/Progress-App/Progress-App/TblViewController.swift"
-                  timestampString = "493555123.470155"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Progress_App.TblViewController.items.setter : __ObjC.NSArray"
-                  moduleName = "Progress-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/Progress-App/Progress-App/TblViewController.swift"
-                  timestampString = "493555123.492373"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Progress_App.TblViewController.items.materializeForSet : __ObjC.NSArray"
-                  moduleName = "Progress-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/Progress-App/Progress-App/TblViewController.swift"
-                  timestampString = "493555123.493386"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Progress_App.TblViewController.init (Progress_App.TblViewController.Type)(style : __C.UITableViewStyle) -&gt; Progress_App.TblViewController"
-                  moduleName = "Progress-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/Progress-App/Progress-App/TblViewController.swift"
-                  timestampString = "493555123.494214"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "248">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Progress_App.TblViewController.init (Progress_App.TblViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Progress_App.TblViewController"
-                  moduleName = "Progress-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/Progress-App/Progress-App/TblViewController.swift"
-                  timestampString = "493555123.495103"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "300">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Progress_App.TblViewController.init (Progress_App.TblViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Progress_App.TblViewController&gt;"
-                  moduleName = "Progress-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/Progress-App/Progress-App/TblViewController.swift"
-                  timestampString = "493555123.495939"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "248">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Progress-App/TblViewController.swift"
-            timestampString = "493554347.645127"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress-App/TblViewController.swift"
-            timestampString = "493554347.645127"
+            timestampString = "495374085.75315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "TblViewController"
-            landmarkType = "3">
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Progress-App/TblViewController.swift"
+            timestampString = "495374085.75315"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Progress-App/TblViewController.swift"
+            timestampString = "495373849.802227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

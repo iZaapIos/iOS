@@ -13,11 +13,14 @@ class TblViewController: UITableViewController {
     
     
     var rootRef = FIRDatabase.database().reference()
+    
 //    var items = [NSDictionary]()
     var items  = []
+    var desc: DescViewController!
     
        override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
     }
@@ -80,14 +83,36 @@ class TblViewController: UITableViewController {
         
         
     }
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
+    
+    
+        override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+            
+            
+            print("products at \(indexPath.row)  --> \(items[indexPath.row]["title"])")
+            let products = items[indexPath.row]["title"]
+            desc.titlename = products as! String
+            
+            print(desc.titlename)
+            
+//            if let products = items[indexPath.row]["title"]
+//            {
+//                performSegueWithIdentifier("editSegue", sender: self)
+//            }
+        }
+    
+    
+    
+    
+    //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //        print("products at \(indexPath.row)  --> \(items[indexPath.row]["title"])")
 //        if let products = items[indexPath.row]["title"] as? [[String:String]]{
 //            valueTopass = products
 //            performSegueWithIdentifier("editSegue", sender: self)
 //        }
 //    }
-//    
+//
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
 //        
 //        if (segue.identifier == "editSegue") {

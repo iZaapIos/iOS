@@ -11,8 +11,10 @@ import Firebase
 
 class DescViewController: UIViewController,UITextViewDelegate {
     
-//    var selectedValue :NSString = ""
-        var TextPlaceHolder:UILabel?
+   
+    var content: String?
+    var titlename: String?
+    var TextPlaceHolder:UILabel?
 
     @IBOutlet weak var TitleTextField: UITextField!
     @IBOutlet weak var ContentTextField: UITextView!
@@ -35,12 +37,11 @@ class DescViewController: UIViewController,UITextViewDelegate {
         let date = NSDate()
         let todayDate = dateFormatter.stringFromDate(date)
 
+          titlename = TitleTextField.text!
+          content = ContentTextField.text
         
-        let title = TitleTextField.text
-        let content = ContentTextField.text
         
-        
-        let note: NSDictionary = ["title":title!,"content":content,"date":todayDate]
+        let note: NSDictionary = ["title":titlename!,"content":content!,"date":todayDate]
         
         //add firebase child node
         let profile = rootRef.childByAppendingPath(title!)
