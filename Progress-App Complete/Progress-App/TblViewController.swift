@@ -18,11 +18,13 @@ class TblViewController: UITableViewController {
     let searchController = UISearchController(searchResultsController: nil)
 
     var databaseRef: FIRDatabaseReference!
+    var refControl = UIRefreshControl()
     
        override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
+        
         
         //setup search controller
         searchController.searchResultsUpdater = self
@@ -31,6 +33,11 @@ class TblViewController: UITableViewController {
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
         
+        // set up the refresh control
+        self.refControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.refControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView?.addSubview(refControl)
+        
 
     }
 
@@ -38,8 +45,16 @@ class TblViewController: UITableViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        loadDataFromFirebase()
+        
+            loadDataFromFirebase()
 
+       
+        
+        
+    }
+    
+    func refresh(sender:AnyObject) {
+        self.loadDataFromFirebase()
     }
     
 
@@ -142,6 +157,14 @@ class TblViewController: UITableViewController {
                 
             }
             self.items = newItems
+            
+            // tell refresh control it can stop showing up now
+            if self.refControl.refreshing
+            {
+                self.refControl.endRefreshing()
+            }
+            
+            
             self.tableView.reloadData()
             
             }) { (error) in
