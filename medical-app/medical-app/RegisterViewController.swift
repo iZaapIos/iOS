@@ -32,6 +32,8 @@ class RegisterViewController: UIViewController {
     {
         if self.Email.text == "" || self.Password.text == ""
         {
+            
+            
             let alertController = UIAlertController(title: "Oops!", message: "Please enter an email and password.", preferredStyle: .Alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
@@ -42,7 +44,9 @@ class RegisterViewController: UIViewController {
         else  {
             
         userRegister.signUp(Email.text!, username: UserName.text!, password: Password.text!, firstname: FirstName.text!, lastname: LastName.text!, phno: PhNo.text!)
-        }
+            
+//            self.performSegueWithIdentifier("registeredin",sender:nil)
+}
         
     }
     
@@ -58,13 +62,6 @@ class RegisterViewController: UIViewController {
     }
     
     
-    func alertaction()
-    {
-    
-        
-        
-    }
-
 
 }
 

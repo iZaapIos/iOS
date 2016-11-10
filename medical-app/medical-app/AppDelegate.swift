@@ -1,4 +1,4 @@
-//
+
 //  AppDelegate.swift
 //  medical-app
 //
@@ -10,26 +10,45 @@ import UIKit
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UINavigationControllerDelegate {
 
     var window: UIWindow?
     var storyboard: UIStoryboard?
+    var navigationController: UINavigationController?
+   
 
-
+   
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
         
-//        self.storyboard =  UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-//        let currentUser = FIRAuth.auth()?.currentUser!
-//        if currentUser != nil
-//        {
-//            self.window?.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("tabVC")
-//        }
-//        else
-//        {
-//            self.window?.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("loginScreen")
-//        }
+        
+        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let currentUser = FIRAuth.auth()!.currentUser
+        if currentUser != nil
+        {
+        
+
+            
+//            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+            let rootViewController:UIViewController = storyboard.instantiateViewControllerWithIdentifier("logmedVC") as! LogMedViewController
+            navigationController.viewControllers = [rootViewController]
+            self.window?.rootViewController = navigationController
+           
+
+        }
+        else
+        {
+
+            
+            let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+            let rootViewController:UIViewController = storyboard.instantiateViewControllerWithIdentifier("firstVC") as! ViewController
+            navigationController.viewControllers = [rootViewController]
+            self.window?.rootViewController = navigationController
+
+        }
+
         return true
     }
 

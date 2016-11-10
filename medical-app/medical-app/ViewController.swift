@@ -7,7 +7,26 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+var storyboard: UIStoryboard?
 
 class ViewController: UIViewController {
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        self.navigationController?.navigationBarHidden = true
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    
+    }
+    
+    
+
 
 }

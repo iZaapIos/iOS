@@ -35,33 +35,8 @@ class LogInViewController: UIViewController {
         
         userRegister.signIn(EmailTextField.text!, password: PasswordTextField.text!)
         }
+//         userRegister.moveToLogMed()
         
-        
-        
-     ///use while log out funtioning
-        
-        
-        
-        
-//                       let currentUser = FIRAuth.auth()?.currentUser!
-                
-        
-        
-//                if currentUser != nil
-//                {
-//                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LogMedVC")
-//                    presentViewController(vc, animated: true, completion: nil)
-//                }
-//                else
-//                {
-//                    userRegister.signIn(EmailTextField.text!, password: PasswordTextField.text!)
-//                    
-//                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("login")
-//                    presentViewController(vc, animated: true, completion: nil)
-//                }
-//        
-//        
- 
         
     }
     
@@ -71,5 +46,43 @@ class LogInViewController: UIViewController {
         EmailTextField.resignFirstResponder()
         PasswordTextField.resignFirstResponder()
     }
+    
+//    //segue Funtion
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "loggedin" {
+//            
+////            let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as UIViewController
+////            UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(viewController, animated: true, completion: nil)
+//
+//            
+//            
+////            if self.EmailTextField.text == "" || self.PasswordTextField.text == ""
+////                    {
+////                        let alertController = UIAlertController(title: "Oops!", message: "Please enter an email and password.", preferredStyle: .Alert)
+////            
+////                        let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+////                        alertController.addAction(defaultAction)
+////            
+////                        self.presentViewController(alertController, animated: true, completion: nil)
+////                    }
+////                    else
+////                    {
+////            
+////                    userRegister.signIn(EmailTextField.text!, password: PasswordTextField.text!)
+////                    }
+////            
+////                        let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as UIViewController
+////                        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(viewController, animated: true, completion: nil)
+////            
+////
+//            
+//        } else
+//        {
+//            
+//            print("error in segue")
+//        }
+//        
+//    }
+
 
 }

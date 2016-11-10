@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0F95381DD43DCE00929079 /* SelectedTabltViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F95371DD43DCE00929079 /* SelectedTabltViewController.swift */; };
+		1F2C12E71DC1DE530082DD93 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2C12E61DC1DE500082DD93 /* AdSupport.framework */; };
+		1F2C12E91DC1FB8F0082DD93 /* more_filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C12E81DC1FB8E0082DD93 /* more_filled-25.png */; };
+		1F2C12EB1DC1FBCA0082DD93 /* menu_2_filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C12EA1DC1FBCA0082DD93 /* menu_2_filled-25.png */; };
+		1F2C12ED1DC1FC490082DD93 /* arrow_filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C12EC1DC1FC490082DD93 /* arrow_filled-25.png */; };
+		1F2C12EF1DC225C60082DD93 /* PopUpMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C12EE1DC225C30082DD93 /* PopUpMenuViewController.swift */; };
 		1F5A43011DAE219200F97E06 /* UserRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A43001DAE218D00F97E06 /* UserRegister.swift */; };
 		1F5A43031DAE3A9A00F97E06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A43021DAE3A9900F97E06 /* ViewController.swift */; };
+		1F5D88651DCB393F00E65028 /* DosagePopUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D88641DCB393E00E65028 /* DosagePopUpTableViewController.swift */; };
+		1F5D88671DCB4E6F00E65028 /* marker_pen_filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D88661DCB4E6E00E65028 /* marker_pen_filled-50.png */; };
+		1F5D88691DCB4EBF00E65028 /* circled_chevron_down_filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D88681DCB4EBF00E65028 /* circled_chevron_down_filled-50.png */; };
+		1F5D886B1DCB4ECB00E65028 /* down4-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D886A1DCB4ECB00E65028 /* down4-50.png */; };
+		1F68CAC51DB9E2A9002D3993 /* LogMedViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F68CAC41DB9E2A8002D3993 /* LogMedViewcontroller.swift */; };
+		1F831BA31DCC5E1F00DF1514 /* MedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F831BA21DCC5E1E00DF1514 /* MedTableViewCell.swift */; };
 		1FB5B9271DA76A310032B1B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5B9261DA76A310032B1B5 /* AppDelegate.swift */; };
 		1FB5B9291DA76A310032B1B5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5B9281DA76A310032B1B5 /* RegisterViewController.swift */; };
 		1FB5B92C1DA76A320032B1B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5B92A1DA76A320032B1B5 /* Main.storyboard */; };
@@ -26,6 +38,7 @@
 		1FC1BD9B1DAFA9E600849FA5 /* tumbler.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC1BD971DAFA9E600849FA5 /* tumbler.png */; };
 		1FC1BD9C1DAFA9E600849FA5 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC1BD981DAFA9E600849FA5 /* instagram.png */; };
 		1FC1BD9D1DAFA9E600849FA5 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC1BD991DAFA9E600849FA5 /* facebook.png */; };
+		1FFA924A1DCC835A0051792A /* medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA92491DCC83590051792A /* medication.swift */; };
 		CFDCC65739761CD9769ED858 /* Pods_medical_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1682989FB96E21594B9B4324 /* Pods_medical_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +61,20 @@
 
 /* Begin PBXFileReference section */
 		1682989FB96E21594B9B4324 /* Pods_medical_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medical_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0F95371DD43DCE00929079 /* SelectedTabltViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTabltViewController.swift; sourceTree = "<group>"; };
+		1F2C12E61DC1DE500082DD93 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1F2C12E81DC1FB8E0082DD93 /* more_filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_filled-25.png"; sourceTree = "<group>"; };
+		1F2C12EA1DC1FBCA0082DD93 /* menu_2_filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_2_filled-25.png"; sourceTree = "<group>"; };
+		1F2C12EC1DC1FC490082DD93 /* arrow_filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_filled-25.png"; sourceTree = "<group>"; };
+		1F2C12EE1DC225C30082DD93 /* PopUpMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpMenuViewController.swift; sourceTree = "<group>"; };
 		1F5A43001DAE218D00F97E06 /* UserRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegister.swift; sourceTree = "<group>"; };
 		1F5A43021DAE3A9900F97E06 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F5D88641DCB393E00E65028 /* DosagePopUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DosagePopUpTableViewController.swift; sourceTree = "<group>"; };
+		1F5D88661DCB4E6E00E65028 /* marker_pen_filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker_pen_filled-50.png"; sourceTree = "<group>"; };
+		1F5D88681DCB4EBF00E65028 /* circled_chevron_down_filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circled_chevron_down_filled-50.png"; sourceTree = "<group>"; };
+		1F5D886A1DCB4ECB00E65028 /* down4-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down4-50.png"; sourceTree = "<group>"; };
+		1F68CAC41DB9E2A8002D3993 /* LogMedViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogMedViewcontroller.swift; sourceTree = "<group>"; };
+		1F831BA21DCC5E1E00DF1514 /* MedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedTableViewCell.swift; sourceTree = "<group>"; };
 		1FB5B9231DA76A310032B1B5 /* medical-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medical-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB5B9261DA76A310032B1B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB5B9281DA76A310032B1B5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +98,7 @@
 		1FC1BD971DAFA9E600849FA5 /* tumbler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tumbler.png; sourceTree = "<group>"; };
 		1FC1BD981DAFA9E600849FA5 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		1FC1BD991DAFA9E600849FA5 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		1FFA92491DCC83590051792A /* medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = medication.swift; sourceTree = "<group>"; };
 		47AA076E19266A9EF2618859 /* Pods-medical-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-medical-app/Pods-medical-app.release.xcconfig"; sourceTree = "<group>"; };
 		B83D184EE3CC5823B91D437C /* Pods-medical-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medical-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medical-app/Pods-medical-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2C12E71DC1DE530082DD93 /* AdSupport.framework in Frameworks */,
 				CFDCC65739761CD9769ED858 /* Pods_medical_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,9 +157,15 @@
 			isa = PBXGroup;
 			children = (
 				1FB5B9261DA76A310032B1B5 /* AppDelegate.swift */,
-				1FB5B9281DA76A310032B1B5 /* RegisterViewController.swift */,
+				1F831BA21DCC5E1E00DF1514 /* MedTableViewCell.swift */,
+				1F0F95371DD43DCE00929079 /* SelectedTabltViewController.swift */,
+				1FFA92491DCC83590051792A /* medication.swift */,
 				1FC1BD8C1DAF914B00849FA5 /* ResetPasswordViewController.swift */,
+				1F2C12EE1DC225C30082DD93 /* PopUpMenuViewController.swift */,
+				1FB5B9281DA76A310032B1B5 /* RegisterViewController.swift */,
 				1FB5B9561DA778F70032B1B5 /* LogInViewController.swift */,
+				1F68CAC41DB9E2A8002D3993 /* LogMedViewcontroller.swift */,
+				1F5D88641DCB393E00E65028 /* DosagePopUpTableViewController.swift */,
 				1F5A43001DAE218D00F97E06 /* UserRegister.swift */,
 				1F5A43021DAE3A9900F97E06 /* ViewController.swift */,
 				1FB5B9581DA7D0260032B1B5 /* MedicationViewController.swift */,
@@ -166,6 +199,12 @@
 		1FC1BD9F1DAFAA4D00849FA5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1F5D88661DCB4E6E00E65028 /* marker_pen_filled-50.png */,
+				1F2C12EA1DC1FBCA0082DD93 /* menu_2_filled-25.png */,
+				1F5D886A1DCB4ECB00E65028 /* down4-50.png */,
+				1F5D88681DCB4EBF00E65028 /* circled_chevron_down_filled-50.png */,
+				1F2C12EC1DC1FC490082DD93 /* arrow_filled-25.png */,
+				1F2C12E81DC1FB8E0082DD93 /* more_filled-25.png */,
 				1FC1BD981DAFA9E600849FA5 /* instagram.png */,
 				1FC1BD961DAFA9E600849FA5 /* twitter.png */,
 				1FC1BD941DAFA9BE00849FA5 /* image2.png */,
@@ -180,6 +219,7 @@
 		4DAC5793BBE1C41707117A1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F2C12E61DC1DE500082DD93 /* AdSupport.framework */,
 				1682989FB96E21594B9B4324 /* Pods_medical_app.framework */,
 			);
 			name = Frameworks;
@@ -302,15 +342,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2C12ED1DC1FC490082DD93 /* arrow_filled-25.png in Resources */,
+				1F2C12EB1DC1FBCA0082DD93 /* menu_2_filled-25.png in Resources */,
 				1FC1BD9A1DAFA9E600849FA5 /* twitter.png in Resources */,
 				1FC1BD9B1DAFA9E600849FA5 /* tumbler.png in Resources */,
 				1FB5B9311DA76A320032B1B5 /* LaunchScreen.storyboard in Resources */,
+				1F5D88691DCB4EBF00E65028 /* circled_chevron_down_filled-50.png in Resources */,
+				1F2C12E91DC1FB8F0082DD93 /* more_filled-25.png in Resources */,
 				1FC1BD9C1DAFA9E600849FA5 /* instagram.png in Resources */,
 				1FC1BD931DAFA98900849FA5 /* image1.png in Resources */,
 				1FC1BD951DAFA9BE00849FA5 /* image2.png in Resources */,
 				1FB5B9551DA773EB0032B1B5 /* GoogleService-Info.plist in Resources */,
 				1FC1BD9D1DAFA9E600849FA5 /* facebook.png in Resources */,
 				1FB5B92E1DA76A320032B1B5 /* Assets.xcassets in Resources */,
+				1F5D886B1DCB4ECB00E65028 /* down4-50.png in Resources */,
+				1F5D88671DCB4E6F00E65028 /* marker_pen_filled-50.png in Resources */,
 				1FB5B92C1DA76A320032B1B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,13 +430,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2C12EF1DC225C60082DD93 /* PopUpMenuViewController.swift in Sources */,
 				1F5A43031DAE3A9A00F97E06 /* ViewController.swift in Sources */,
 				1F5A43011DAE219200F97E06 /* UserRegister.swift in Sources */,
 				1FB5B9571DA778F80032B1B5 /* LogInViewController.swift in Sources */,
+				1F5D88651DCB393F00E65028 /* DosagePopUpTableViewController.swift in Sources */,
 				1FB5B9591DA7D0280032B1B5 /* MedicationViewController.swift in Sources */,
+				1F68CAC51DB9E2A9002D3993 /* LogMedViewcontroller.swift in Sources */,
 				1FB5B9291DA76A310032B1B5 /* RegisterViewController.swift in Sources */,
+				1FFA924A1DCC835A0051792A /* medication.swift in Sources */,
+				1F831BA31DCC5E1F00DF1514 /* MedTableViewCell.swift in Sources */,
 				1FB5B9271DA76A310032B1B5 /* AppDelegate.swift in Sources */,
 				1FC1BD8D1DAF914C00849FA5 /* ResetPasswordViewController.swift in Sources */,
+				1F0F95381DD43DCE00929079 /* SelectedTabltViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,10 +586,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "medical-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FanthemLLC.medical-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -547,10 +602,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "medical-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FanthemLLC.medical-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5011278e-5082-4fb2-a3aa-9b50368c207e";
 			};
 			name = Release;
 		};

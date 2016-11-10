@@ -14,8 +14,12 @@ import FirebaseDatabase
 
 
 
+
+
 struct UserInfo {
-    var databaseRef: FIRDatabaseReference! {
+    
+    var storyboard: UIStoryboard?
+        var databaseRef: FIRDatabaseReference! {
         return FIRDatabase.database().reference()
     }
     
@@ -52,14 +56,24 @@ struct UserInfo {
         
         FIRAuth.auth()?.signInWithEmail(email, password: password, completion: { (user, error) in
             if error == nil {
+                print ("no error")
                 
+                
+//                
+//                let vc = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as! LogMedViewController
+//                UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(vc, animated: false, completion: nil)
                 if let user = user {
                     
                     print("\(user.displayName!) has signed in succesfully!")
-                
+                   
+                    
+                    
                 }
+
                 
             }else {
+                
+                print(error!.localizedDescription)
                 
                 let alertController = UIAlertController(title: "Oops!", message: error?.localizedDescription, preferredStyle: .Alert)
 
@@ -91,8 +105,17 @@ struct UserInfo {
                         self.saveInfo(user, username: username, password: password, firstname: firstname, lastname:lastname, phno: phno)
                         
                     }else{
-                        print(error!.localizedDescription)
+//                        print(error!.localizedDescription)
+
+                        let alertController = UIAlertController(title: "Oops!", message: error?.localizedDescription, preferredStyle: .Alert)
                         
+                        let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                        alertController.addAction(defaultAction)
+                        
+                        
+                        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+                        
+
                     }
                 })
         
@@ -105,8 +128,17 @@ struct UserInfo {
             if error == nil {
                 print("An email with information on how to reset your password has been sent to you. thank You")
             }else {
-                print(error!.localizedDescription)
+//                print(error!.localizedDescription)
+
+                let alertController = UIAlertController(title: "Oops!", message: error?.localizedDescription, preferredStyle: .Alert)
                 
+                let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                
+                UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+                
+
             }
         })
         
@@ -119,8 +151,9 @@ struct UserInfo {
            FIRAuth.auth()?.createUserWithEmail(email, password: password, completion: { (user, error) in
             
             if error == nil {
-                
-                
+//                self.prepareSegueWithIdentifier("registeredin",sender:nil)
+                //aunthenticate the user
+                FIREmailPasswordAuthProvider.credentialWithEmail(email, password: password)
                 self.setUserInfo(user, username: username,  password: password, firstname:firstname, lastname:lastname, phno: phno)
                 
             }else {
@@ -131,8 +164,7 @@ struct UserInfo {
                 
                 
                 UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
-                
-
+            
                 
             }
         })
@@ -140,6 +172,41 @@ struct UserInfo {
     
     
      }
+    
+    //segue Funtion
+//    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "registeredin" {
+//
+//            let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as UIViewController
+//             UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(viewController, animated: true, completion: nil)
+//            
+//        } else if segue.identifier == "loggedin" {
+//            let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as UIViewController
+//            UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(viewController, animated: true, completion: nil)
+//        }
+//    }
+    
+    func moveToLogMed()
+    {
+//        let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as UIViewController
+//        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(viewController, animated: true, completion: nil)
+        
+        var segue: UIStoryboardSegue!
+    
+    if segue.identifier == "registeredin" {
+    
+    let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as UIViewController
+    UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(viewController, animated: true, completion: nil)
+    
+    } else if segue.identifier == "loggedin" {
+    let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as UIViewController
+    UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(viewController, animated: true, completion: nil)
+    }
+
+
+
+    }
+    
 }
 
 
