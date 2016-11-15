@@ -57,9 +57,13 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
      
         let med = itemslist[indexPath.row]
 //        print(med)
+       
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MedTableViewCell
-        cell.MedLabel.text = med.name
+        cell.MedLabel.text = med.name    
+        
+        
+
 //        print(cell.MedLabel)
         return cell
     }
@@ -67,35 +71,23 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
         
         if segue.identifier == "selectedmedSegue" {
-//            if let indexPath = tableview.indexPathForSelectedRow {
-//                let med = itemslist[indexPath.row]
-            print("condition satisfy")
-//                
                 let selectedTopic = itemslist[tableview.indexPathForSelectedRow!.row]
-               print(selectedTopic)
-                
-                let vc = segue.destinationViewController as! SelectedTabltViewController
-//            let indexPath = tableview.indexPathForSelectedRow!
-                
-                vc.TopicPassed = selectedTopic.name
             
-                print(vc.TopicPassed)
-//            }
+            let selectedkey = selectedTopic.key
+            print(selectedkey)
+            
+                let vc = segue.destinationViewController as! SelectedTabltViewController
+                let vk =  DosagePopUpTableViewController()
+            
+                  vc.TopicPassed = selectedTopic.name
+                  vk.KeyPassed = selectedTopic.key
+            //  print(selectedTopic.name)
             
         }
     }
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let selectedTopic = itemslist[indexPath.row]
-        
-        let Sentences = SelectedTabltViewController()
-       Sentences.TopicPassed = selectedTopic.name
-     self.performSegueWithIdentifier("selectedmedSegue", sender: tableview)
-        let pathSelect = tableview.indexPathForSelectedRow
-        pathSelect
-    }
+
     
     
     func loadDataFromFirebase() {
@@ -103,10 +95,14 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
         
         databaseRef = FIRDatabase.database().reference().child("medication")
         
-        print(databaseRef)
         
         databaseRef.observeEventType(.Value, withBlock: { (snapshot) in
             
+//            
+//             let title = snapshot.value!.objectForKey("options") as?
+//            String
+//                
+//            print(title)
             var newItems = [medlist]()
             
             for item in snapshot.children {

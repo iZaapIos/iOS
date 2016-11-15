@@ -15,14 +15,12 @@ import FirebaseDatabase
 struct medlist {
     
     var name: String!
-    
     var ref: FIRDatabaseReference?
     var key: String!
     
     
-    init( name: String,key: String = ""){
-        
-        
+      init(name: String,key: String = ""){
+    
         self.name = name
         self.key = key
         self.ref = FIRDatabase.database().reference()
@@ -31,9 +29,6 @@ struct medlist {
     init(snapshot: FIRDataSnapshot){
         
         self.key = snapshot.key
-
-        let snapshotValue = snapshot.value as!  [ String:AnyObject]
-
         self.name = snapshot.value!["name"] as! String
         self.ref = snapshot.ref
         
@@ -43,11 +38,12 @@ struct medlist {
     func toAnyObject() -> [String: AnyObject] {
         
         return ["name": name]
-//        return [key : ""]
+
     }
 }
 
-//class med: NSObject
+//class medlist: NSObject
 //{
-//    var email: String?
+//    var name: String?
+//    var key: String!
 //}

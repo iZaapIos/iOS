@@ -43,6 +43,6 @@ class LogMedViewController: UIViewController,UIPopoverPresentationControllerDele
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
         return .None
     }
-    
+        
 }
 
