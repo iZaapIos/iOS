@@ -10,76 +10,138 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class DosagePopUpTableViewController: UITableViewController {
-    var KeyPassed : String!
-    
 
+protocol DataSentDelegate{
+    func SentDosage(data: String)
+}
+
+class DosagePopUpTableViewController: UITableViewController {
     
+    var DosagePassed : String!
+    var DosageArr : [String]?
+    
+    var delegate: DataSentDelegate? = nil
+
+    @IBOutlet var tableview: UITableView!
     var databaseRef: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadDataFromFirebase()
         
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        self.navigationController?.navigationBarHidden = true
+        DosagePassed = Manager.DosageText
+        DosageArr = DosagePassed.componentsSeparatedByString(",")
+        
+        
+//        let ref = FIRDatabase.database().reference().child("medication").child("dosage")
+//        
+//        ref.observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+//            if snapshot.exists() {
+//                if let all = (snapshot.value?.allKeys)! as? [String]{
+//                    for a in all{
+//                        if let products = snapshot.value![a] as? [[String:String]]{
+//                            self.snusBrandsArray.append(["key":a,"value":products])
+//                        }
+//                    }
+//                    self.tableview.reloadData()
+//                }
+//            }
+//        })
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 4
-        
+    return DosageArr!.count
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        
+
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! DosageTableCell
-        cell.Dosagelbl.text = KeyPassed
+        cell.Dosagelbl.text = DosageArr![indexPath.row]
       return cell
     }
     
-    func loadDataFromFirebase() {
+    override func  tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        
-        databaseRef = FIRDatabase.database().reference().child("medication")
-        
-
-        databaseRef.observeEventType(.Value, withBlock: { snapshot in
-           
-            
-            for item in snapshot.children{
-            FIRDatabase.database().reference().child("medication").child("options").observeEventType(.Value, withBlock: {snapshot in
-                    print(snapshot.value)
-                })
-            }
-         
-        })
-        
-            
-//            
-//            for item in snapshot.children {
-//                
-//        print(snapshot.value!.objectForKey("first"))
-////
-////                let newNote = medlist(snapshot: item as! FIRDataSnapshot)
-////                
-////                newItems.insert(newNote, atIndex: 0)
-//            }
-//
-//            })
-//            self.itemslist = newItems
-//            self.tableview.reloadData()
-//            
-//            }) { (error) in
-//                print(error.localizedDescription)
-//                self.tableview.reloadData()
-//        }
+        let seldosage = DosageArr![tableview.indexPathForSelectedRow!.row]
+    
+        if delegate != nil {
+             let data = seldosage
+            delegate?.SentDosage(data)
+            dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     
+    
+    
+
 }
 
+        
+
+
+
+
+
+
+        
+//        databaseRef = FIRDatabase.database().reference().child("medication")
+//        
+//        
+//
+//        let myRef = self.databaseRef.childByAppendingPath("dosage")
+//        print(myRef)
+////        myRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+//        myRef.queryOrderedByChild("dosage").observeSingleEventOfType(.ChildAdded, withBlock: { snapshot in
+//            
+//            let a = snapshot.value as! NSArray
+//            print(a)
+//            
+//            let b = (a as Array).filter {$0 is String}
+//            
+//            print(b)
+//        })
+//        
+//        
+//        
+//        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+//        databaseRef.queryOrderedByChild("dosage").observeEventType(.ChildAdded, withBlock: { snapshot in
+//            
+//            for item in snapshot.children{
+//               
+//                    if let title = snapshot.value!["dosage"] as? String {
+//                        
+//                        print(title)
+//                        self.titlesArray.append(title)
+//                        
+//                        // Double-check that the correct data is being pulled by printing to the console.
+//                        print("\(self.titlesArray)")
+//                        
+//                        
+//                        
+//                        // async download so need to reload the table that this data feeds into.
+//                      
+//                        self.tableView.reloadData()
+//                    }
+//                 }
+//            
+//               })
+        
+//         }
 
     
 

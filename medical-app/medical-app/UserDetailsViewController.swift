@@ -10,9 +10,13 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
-import FirebaseStorage
+
 
 class UserDetailsViewController: UIViewController {
+    
+    
+    var user: UserDetails!
+    
     
     @IBOutlet var Username: UITextField!
     
@@ -21,97 +25,70 @@ class UserDetailsViewController: UIViewController {
     @IBOutlet var email: UITextField!
     @IBOutlet var phNo: UITextField!
     
-    var user = [UserDetails]()
-    
-//    var databaseRef: FIRDatabaseReference! {
-//        return FIRDatabase.database().reference()
-//    }
     
     var databaseRef: FIRDatabaseReference!
-    var storageRef: FIRStorage! {
-        return FIRStorage.storage()
-    }
+    var  refHandle: UInt!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        databaseRef = FIRDatabase.database().reference()
-      
-            
-        if FIRAuth.auth()?.currentUser == nil {
-                
-       let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login")
-                presentViewController(vc, animated: true, completion: nil)
-                }
-        else {
-            databaseRef = FIRDatabase.database().reference().child("users")
-            
-            
-           databaseRef.observeEventType(.Value, withBlock: { (snapshot) in
-           var newItems = [UserDetails]()
-            
-           for child in snapshot.children
-           {
-//             let newNote = UserDetails(snapshot: child as! FIRDataSnapshot)
-//              newItems.insert(newNote, atIndex: 0)
-              var n = child.value!!["email"] as! String
-                  self.email.text = n
-            }
-//               self.user = newItems
-//                 print(self.user)
-            
-               })
-        }
-    }
-    
-    
-
-    
-    
-    
-    @IBAction func saveAction(sender: AnyObject) {
         
-        //update the email section
-        if let user = FIRAuth.auth()?.currentUser {
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        
+        let userRef = FIRDatabase.database().reference().child("users")
+        userRef.observeEventType(.Value, withBlock: { (snapshot)  in
             
-            user.updateEmail(email.text!, completion: { (error) in
-                if let error = error{
-                    print(error.localizedDescription)
-                }else {
-                    let alertView = UIAlertView(title: "Update Email", message: "You have successfully updated your email", delegate: self, cancelButtonTitle: "OK, Thanks")
-                    alertView.show()
-                }
-            })
-        }
+            for userInfo in snapshot.children {
+                self.user = UserDetails(snapshot: userInfo as! FIRDataSnapshot)
+                print(self.user)
+            }
+            if let user = self.user{
+                self.Username.text = user.username
+                self.Firstname.text = user.firstname
+                self.Lastname.text = user.lastname
+                 self.email.text = user.email
+                 self.phNo.text = user.phno
+            }
+            
+            
+            
+        })
 
+        
+    }
+    
+    
+
+    
+    
+    
+//    @IBAction func saveAction(sender: AnyObject) {
+//        
+//        //update the email section
+//        if let user = FIRAuth.auth()?.currentUser {
+//            
+//            let credential = FIREmailPasswordAuthProvider.credentialWithEmail(email.text!,password: "")
+//            
+////            user.updateEmail(email.text!, completion: { (error) in
+//            user?.reauthenticateWithCredential(credential) { error in
+//                if let error = error{
+//                    print(error.localizedDescription)
+//                }else {
+//                    let alertView = UIAlertView(title: "Update Email", message: "You have successfully updated your email", delegate: self, cancelButtonTitle: "OK, Thanks")
+//                    alertView.show()
+//                }
+//            })
+//            
+//        }
+//
+//    }
+
+        
     }
 
 
 
-
-}
-
-
-//            databaseRef = FIRDatabase.database().reference().child("users")
-//
-//
-//            databaseRef.observeEventType(.Value, withBlock: { (snapshot) in
-//
-
-
-
-
-//                    var newItems = [UserDetails]()
-//
-//                    for child in snapshot.children
-//                    {
-//                        let newNote = UserDetails(snapshot: child as! FIRDataSnapshot)
-//                        newItems.insert(newNote, atIndex: 0)
-////                    let n = child.value!!["username"] as! String
-////                    print(n)
-//                    }
-//                    self.user = newItems
-//                    print(self.user)
-//
-//                }
 

@@ -10,4 +10,5 @@ import UIKit
 class MedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var MedLabel: UILabel!
+    @IBOutlet weak var dosagelbl: UILabel!
 }

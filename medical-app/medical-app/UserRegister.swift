@@ -34,7 +34,7 @@ struct UserInfo {
         
         // Create our user dictionary info\
         
-        let userInfo = ["email": user.email!, "username": username, "firstname": firstname, "lastname":lastname, "phno": phno]
+        let userInfo = ["email": user.email!, "username": username,"password":password ,"firstname": firstname, "lastname":lastname, "phno": phno]
         
         // create user reference
         

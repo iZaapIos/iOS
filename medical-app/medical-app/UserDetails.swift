@@ -8,9 +8,12 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 struct UserDetails {
     
+    
+    var uid : String!
     var username: String!
     var firstname:String!
     var lastname:String!
@@ -20,8 +23,12 @@ struct UserDetails {
     var key: String!
     
     
-    init(username: String,firstname: String,lastname: String,email: String,phno: String,key: String = ""){
-        
+    init(username: String,firstname: String,lastname: String,email: String,phno: String,userId: String,key: String = ""){
+    
+    
+
+    
+        self.uid = userId
         self.username = username
         self.firstname = firstname
         self.lastname = lastname
@@ -33,20 +40,24 @@ struct UserDetails {
     
     init(snapshot: FIRDataSnapshot){
         
-        key = snapshot.key
-        username = snapshot.value!["username"] as! String
-        firstname = snapshot.value!["firstname"] as! String
+        self.key = snapshot.key
+        print(self.key)
+        self.username = snapshot.value!["username"] as! String
+        self.firstname = snapshot.value!["firstname"] as! String
+        self.uid = snapshot.value!["uid"] as? String
         lastname = snapshot.value!["lastname"] as! String
         email = snapshot.value!["email"] as! String
         phno = snapshot.value!["phno"] as! String
-        ref = snapshot.ref
+        self.ref = snapshot.ref
+        print(self.ref)
         
         
     }
     
-    func toAnyObject() -> [String: AnyObject] {
-        
-        return ["username": username,"firstname": firstname,"lastname": lastname,"email": email,"phno": phno]
-        
-    }
+//    func toAnyObject() -> [String: AnyObject] {
+//        
+////        return ["username": username,"firstname": firstname,"lastname": lastname,"email": email,"phno": phno]
+//        return ["username": username,"firstname": firstname,]
+//        
+//    }
 }

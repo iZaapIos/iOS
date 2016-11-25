@@ -24,7 +24,7 @@ class LogMedViewController: UIViewController,UIPopoverPresentationControllerDele
     {
      
         let VC = storyboard?.instantiateViewControllerWithIdentifier("PopUpVC") as! PopUpMenuViewController
-        VC.preferredContentSize = CGSize(width:200 , height: 250)
+        VC.preferredContentSize = CGSize(width:200 , height: 350)
         let navController = UINavigationController(rootViewController:
             VC)
         navController.modalPresentationStyle = UIModalPresentationStyle.Popover

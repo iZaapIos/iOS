@@ -10,17 +10,16 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 
-
-
-struct medlist {
+struct medication {
     
+    var dosage: String
     var name: String!
     var ref: FIRDatabaseReference?
     var key: String!
     
+    init(name: String,dosage: String,key: String = ""){
     
-      init(name: String,key: String = ""){
-    
+        self.dosage = dosage
         self.name = name
         self.key = key
         self.ref = FIRDatabase.database().reference()
@@ -30,20 +29,13 @@ struct medlist {
         
         self.key = snapshot.key
         self.name = snapshot.value!["name"] as! String
+        self.dosage = snapshot.value!["dosage"] as! String
         self.ref = snapshot.ref
-        
-        
-    }
     
-    func toAnyObject() -> [String: AnyObject] {
         
-        return ["name": name]
-
     }
+
+
+
 }
 
-//class medlist: NSObject
-//{
-//    var name: String?
-//    var key: String!
-//}

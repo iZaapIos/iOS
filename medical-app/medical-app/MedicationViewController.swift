@@ -9,14 +9,13 @@
 import UIKit
 import Firebase
 
-class MedicationViewController: UIViewController,UIPopoverPresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate {
+class MedicationViewController: UIViewController,UIPopoverPresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableview: UITableView!
-     var itemslist = [medlist]()
+     var itemslist = [medication]()
  
     var databaseRef: FIRDatabaseReference!
-    var refHandle: UInt!
-    
+     
 
     
     
@@ -35,7 +34,8 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
 //        let leftItem = UIBarButtonItem(customView: longTitleLabel)
 //        self.navigationItem.leftBarButtonItem = leftItem
 
-    }
+        }
+    
     
     
     override func viewDidAppear(animated: Bool) {
@@ -56,15 +56,13 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
      
         let med = itemslist[indexPath.row]
-//        print(med)
+        print(med)
        
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MedTableViewCell
-        cell.MedLabel.text = med.name    
-        
-        
-
-//        print(cell.MedLabel)
+        cell.MedLabel.text = med.name
+        cell.dosagelbl.text = med.dosage
+        cell.dosagelbl.hidden = true
         return cell
     }
     
@@ -73,16 +71,14 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
         if segue.identifier == "selectedmedSegue" {
                 let selectedTopic = itemslist[tableview.indexPathForSelectedRow!.row]
             
-            let selectedkey = selectedTopic.key
-            print(selectedkey)
+            var seldosage = selectedTopic.dosage
             
                 let vc = segue.destinationViewController as! SelectedTabltViewController
-                let vk =  DosagePopUpTableViewController()
-            
+        
                   vc.TopicPassed = selectedTopic.name
-                  vk.KeyPassed = selectedTopic.key
-            //  print(selectedTopic.name)
             
+              Manager.DosageText = seldosage
+            print(seldosage)
         }
     }
     
@@ -94,35 +90,30 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
         
         
         databaseRef = FIRDatabase.database().reference().child("medication")
+        print(databaseRef.childByAutoId())
         
-        
+
         databaseRef.observeEventType(.Value, withBlock: { (snapshot) in
-            
-//            
-//             let title = snapshot.value!.objectForKey("options") as?
-//            String
-//                
-//            print(title)
-            var newItems = [medlist]()
+        
+
+            var newItems = [medication]()
+            print(newItems)
             
             for item in snapshot.children {
                 
-                let newNote = medlist(snapshot: item as! FIRDataSnapshot)
+                let newNote = medication(snapshot: item as! FIRDataSnapshot)
                
-                newItems.insert(newNote, atIndex: 0)
+                newItems.append(newNote)
                 
             }
             self.itemslist = newItems
             self.tableview.reloadData()
             
-            }) { (error) in
-                print(error.localizedDescription)
-                self.tableview.reloadData()
-        }
+        })
+    }
+    
     }
 
-}
-
         
         
         
@@ -133,24 +124,5 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
         
         
         
-//refHandle = ref.child("users").observeEventType(.ChildAdded  , withBlock: { (snapshot) in
-//        if let dictionary = snapshot.value as? [String: AnyObject]{
-//                
-//                print(self.refHandle)
-//                let items = med()
-//                
-//                items.setValuesForKeysWithDictionary(dictionary)
-//                self.itemslist.append(items)
-//    
-//    dispatch_async(dispatch_get_main_queue(),{
-//                    self.tableview.reloadData()
-//                })
-//                
-//                
-//              }
-//    
-//            })
-//
-//    }
 
 

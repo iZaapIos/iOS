@@ -68,8 +68,9 @@ class UpdateViewController: UIViewController,UITextViewDelegate {
         }
         let updatenote = Note(title: titlename!,content: content!, date: todayDate)
         
-        
+        print(updatenote)
         let key = note!.ref!.key
+        print(key)
         
         let updateRef = rootRef.child("/note/\(key)")
         
