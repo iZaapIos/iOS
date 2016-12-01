@@ -58,8 +58,6 @@ class AddedMedicationListViewController: UITableViewController {
                 
             let newMed = medlist(snapshot: item as! FIRDataSnapshot)
                   newItems.append(newMed)
-                print(newMed)
-
             }
             
             self.Addedlist = newItems

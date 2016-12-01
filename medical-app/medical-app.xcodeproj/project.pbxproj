@@ -21,7 +21,11 @@
 		1F5D88651DCB393F00E65028 /* DosagePopUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D88641DCB393E00E65028 /* DosagePopUpTableViewController.swift */; };
 		1F5D886B1DCB4ECB00E65028 /* down4-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D886A1DCB4ECB00E65028 /* down4-50.png */; };
 		1F6226841DE303AA001ADCB7 /* DosageText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6226831DE303A5001ADCB7 /* DosageText.swift */; };
+		1F6814831DEC54FD00D10E9E /* checkBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6814821DEC54FC00D10E9E /* checkBox.swift */; };
 		1F68CAC51DB9E2A9002D3993 /* LogMedViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F68CAC41DB9E2A8002D3993 /* LogMedViewcontroller.swift */; };
+		1F6ACE721DEFF35C00A4B170 /* Checked_Checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6ACE711DEFF35C00A4B170 /* Checked_Checkbox.png */; };
+		1F6ACE741DEFF36900A4B170 /* Unchecked_Checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6ACE731DEFF36900A4B170 /* Unchecked_Checkbox.png */; };
+		1F770BCF1DE851D600DD4E8B /* RemedyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F770BCE1DE851D300DD4E8B /* RemedyViewController.swift */; };
 		1F831BA31DCC5E1F00DF1514 /* MedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F831BA21DCC5E1E00DF1514 /* MedTableViewCell.swift */; };
 		1FB5B9271DA76A310032B1B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5B9261DA76A310032B1B5 /* AppDelegate.swift */; };
 		1FB5B9291DA76A310032B1B5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5B9281DA76A310032B1B5 /* RegisterViewController.swift */; };
@@ -38,8 +42,6 @@
 		1FC159101DE6E38200C86FAF /* AddedMedicationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC1590F1DE6E38000C86FAF /* AddedMedicationListViewController.swift */; };
 		1FC159121DE6E4CA00C86FAF /* AddedMedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC159111DE6E4CA00C86FAF /* AddedMedTableCell.swift */; };
 		1FC159161DE6F42B00C86FAF /* Checkmark-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC159151DE6F42B00C86FAF /* Checkmark-52.png */; };
-		1FC159181DE6F48100C86FAF /* Unchecked Checkbox-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC159171DE6F48100C86FAF /* Unchecked Checkbox-52.png */; };
-		1FC1591A1DE6F48B00C86FAF /* Checked Checkbox-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC159191DE6F48B00C86FAF /* Checked Checkbox-52.png */; };
 		1FC1591E1DE6F69700C86FAF /* multiply_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC1591D1DE6F69700C86FAF /* multiply_filled-32.png */; };
 		1FC159201DE6F76000C86FAF /* checkmark_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC1591F1DE6F76000C86FAF /* checkmark_filled-32.png */; };
 		1FC159221DE6F7C400C86FAF /* right_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC159211DE6F7C400C86FAF /* right_filled-32.png */; };
@@ -91,7 +93,11 @@
 		1F5D88641DCB393E00E65028 /* DosagePopUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DosagePopUpTableViewController.swift; sourceTree = "<group>"; };
 		1F5D886A1DCB4ECB00E65028 /* down4-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down4-50.png"; sourceTree = "<group>"; };
 		1F6226831DE303A5001ADCB7 /* DosageText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DosageText.swift; sourceTree = "<group>"; };
+		1F6814821DEC54FC00D10E9E /* checkBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkBox.swift; sourceTree = "<group>"; };
 		1F68CAC41DB9E2A8002D3993 /* LogMedViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogMedViewcontroller.swift; sourceTree = "<group>"; };
+		1F6ACE711DEFF35C00A4B170 /* Checked_Checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checked_Checkbox.png; sourceTree = "<group>"; };
+		1F6ACE731DEFF36900A4B170 /* Unchecked_Checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unchecked_Checkbox.png; sourceTree = "<group>"; };
+		1F770BCE1DE851D300DD4E8B /* RemedyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemedyViewController.swift; sourceTree = "<group>"; };
 		1F831BA21DCC5E1E00DF1514 /* MedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedTableViewCell.swift; sourceTree = "<group>"; };
 		1FB5B9231DA76A310032B1B5 /* medical-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medical-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB5B9261DA76A310032B1B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,8 +120,6 @@
 		1FC1590F1DE6E38000C86FAF /* AddedMedicationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedMedicationListViewController.swift; sourceTree = "<group>"; };
 		1FC159111DE6E4CA00C86FAF /* AddedMedTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedMedTableCell.swift; sourceTree = "<group>"; };
 		1FC159151DE6F42B00C86FAF /* Checkmark-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark-52.png"; sourceTree = "<group>"; };
-		1FC159171DE6F48100C86FAF /* Unchecked Checkbox-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Unchecked Checkbox-52.png"; sourceTree = "<group>"; };
-		1FC159191DE6F48B00C86FAF /* Checked Checkbox-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked Checkbox-52.png"; sourceTree = "<group>"; };
 		1FC1591D1DE6F69700C86FAF /* multiply_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "multiply_filled-32.png"; sourceTree = "<group>"; };
 		1FC1591F1DE6F76000C86FAF /* checkmark_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark_filled-32.png"; sourceTree = "<group>"; };
 		1FC159211DE6F7C400C86FAF /* right_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_filled-32.png"; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				1F5A43001DAE218D00F97E06 /* UserRegister.swift */,
+				1F6814821DEC54FC00D10E9E /* checkBox.swift */,
 				1FC159111DE6E4CA00C86FAF /* AddedMedTableCell.swift */,
 				1FC1590D1DE6CB0600C86FAF /* medlist.swift */,
 				1F6226831DE303A5001ADCB7 /* DosageText.swift */,
@@ -184,6 +189,7 @@
 				1F05AB9D1DD9C948002D8A77 /* UserDetailsViewController.swift */,
 				1FC1590B1DE6C87D00C86FAF /* SummaryViewController.swift */,
 				1F05AB9B1DD9C892002D8A77 /* RatePainViewController.swift */,
+				1F770BCE1DE851D300DD4E8B /* RemedyViewController.swift */,
 				1FC1590F1DE6E38000C86FAF /* AddedMedicationListViewController.swift */,
 				1F0F95371DD43DCE00929079 /* SelectedTabltViewController.swift */,
 				1FB5B9561DA778F70032B1B5 /* LogInViewController.swift */,
@@ -265,8 +271,8 @@
 		1FC1BD9F1DAFAA4D00849FA5 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				1FC159171DE6F48100C86FAF /* Unchecked Checkbox-52.png */,
-				1FC159191DE6F48B00C86FAF /* Checked Checkbox-52.png */,
+				1F6ACE711DEFF35C00A4B170 /* Checked_Checkbox.png */,
+				1F6ACE731DEFF36900A4B170 /* Unchecked_Checkbox.png */,
 				1FC159151DE6F42B00C86FAF /* Checkmark-52.png */,
 				1FCB0FB41DD5E8D200888AAE /* thumb_up_filled-50.png */,
 				1F2C12EA1DC1FBCA0082DD93 /* menu_2_filled-25.png */,
@@ -419,7 +425,7 @@
 				1FC1BD9A1DAFA9E600849FA5 /* twitter.png in Resources */,
 				1FC1BD9B1DAFA9E600849FA5 /* tumbler.png in Resources */,
 				1FC159161DE6F42B00C86FAF /* Checkmark-52.png in Resources */,
-				1FC1591A1DE6F48B00C86FAF /* Checked Checkbox-52.png in Resources */,
+				1F6ACE721DEFF35C00A4B170 /* Checked_Checkbox.png in Resources */,
 				1FB5B9311DA76A320032B1B5 /* LaunchScreen.storyboard in Resources */,
 				1F2C12E91DC1FB8F0082DD93 /* more_filled-25.png in Resources */,
 				1FC1BD9C1DAFA9E600849FA5 /* instagram.png in Resources */,
@@ -428,8 +434,8 @@
 				1FCB0FB51DD5E8D500888AAE /* thumb_up_filled-50.png in Resources */,
 				1FC1BD951DAFA9BE00849FA5 /* image2.png in Resources */,
 				1FC159241DE6FB7200C86FAF /* f4e160a352d2c7a602553be82deb67dd.jpg in Resources */,
-				1FC159181DE6F48100C86FAF /* Unchecked Checkbox-52.png in Resources */,
 				1FB5B9551DA773EB0032B1B5 /* GoogleService-Info.plist in Resources */,
+				1F6ACE741DEFF36900A4B170 /* Unchecked_Checkbox.png in Resources */,
 				1FC1BD9D1DAFA9E600849FA5 /* facebook.png in Resources */,
 				1FB5B92E1DA76A320032B1B5 /* Assets.xcassets in Resources */,
 				1F5D886B1DCB4ECB00E65028 /* down4-50.png in Resources */,
@@ -512,12 +518,14 @@
 				1F5A43031DAE3A9A00F97E06 /* ViewController.swift in Sources */,
 				1F5A43011DAE219200F97E06 /* UserRegister.swift in Sources */,
 				1FC159121DE6E4CA00C86FAF /* AddedMedTableCell.swift in Sources */,
+				1F6814831DEC54FD00D10E9E /* checkBox.swift in Sources */,
 				1FB5B9571DA778F80032B1B5 /* LogInViewController.swift in Sources */,
 				1F5D88651DCB393F00E65028 /* DosagePopUpTableViewController.swift in Sources */,
 				1F05AB9C1DD9C899002D8A77 /* RatePainViewController.swift in Sources */,
 				1F6226841DE303AA001ADCB7 /* DosageText.swift in Sources */,
 				1FCB0FB31DD59A3000888AAE /* DosageTableCell.swift in Sources */,
 				1FB5B9591DA7D0280032B1B5 /* MedicationViewController.swift in Sources */,
+				1F770BCF1DE851D600DD4E8B /* RemedyViewController.swift in Sources */,
 				1F68CAC51DB9E2A9002D3993 /* LogMedViewcontroller.swift in Sources */,
 				1FB5B9291DA76A310032B1B5 /* RegisterViewController.swift in Sources */,
 				1FFA924A1DCC835A0051792A /* medication.swift in Sources */,
