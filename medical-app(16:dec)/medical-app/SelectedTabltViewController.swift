@@ -20,7 +20,7 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
     @IBOutlet weak var TabNoLbl: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var freqlbl: UILabel!
-    let medDetails = MedicationDetails()
+    var medic = [String]()
     
     
     @IBOutlet weak var notificationlbl: UILabel?
@@ -83,9 +83,20 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
         
         popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.init(rawValue: 0)
         popoverPresentationViewController?.delegate = self
-        popoverPresentationViewController?.sourceView = Dosagelbl
-        popoverPresentationViewController?.sourceRect = Dosagelbl.frame
+//        popoverPresentationViewController?.sourceView = Dosagelbl
+//          popoverPresentationViewController?.sourceRect = CGRectMake(Dosagelbl.frame.width, Dosagelbl.frame.height*3, 0, 0)
+        
+            popoverPresentationViewController?.sourceView = Dosagelbl
+            popoverPresentationViewController?.sourceRect = Dosagelbl.bounds
+//            popoverPresentationViewController?.sourceRect = CGRectMake(Dosagelbl.frame.width, Dosagelbl.frame.height*3, 0, 0)
+//
+        
+        
+        
 //        let position = CGRectMake(aView.bounds.origin.x, aView.bounds.origin.y + 125, aView.bounds.size.width, aView.bounds.size.height)
+        
+// _popoverPresentationController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds),0,0)
+        
 //        popoverPresentationViewController?.sourceRect = Dosagelbl.bounds
         
         presentViewController(popover!, animated: true, completion: nil)
@@ -126,9 +137,11 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
         
 //        let medRef = databaseRef.child("MedicationDetails").child("medicine").childByAutoId()
 ////
-        let medic = medlist(name: TopicPassed, dosage: Dosagelbl.text!, NoOfTab: TabNoLbl.text!, freq: freqlbl.text!, interval: IntervalLbl.text!)
+        var medic = medlist(name: TopicPassed, dosage: Dosagelbl.text!, NoOfTab: TabNoLbl.text!, freq: freqlbl.text!, interval: IntervalLbl.text!)
         
         print(medic)
+        
+        
         
         
 //         medRef.setValue(medic.toAnyObject())
@@ -150,6 +163,8 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
 //        self.presentViewController(controller, animated: true, completion: nil)
         
     }
+    
+    
     
     func SentDosage(data: String){
         

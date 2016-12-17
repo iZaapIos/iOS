@@ -745,7 +745,9 @@
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GCj-YR-yU4">
                                     <rect key="frame" x="67" y="7" width="71" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
+                                    <state key="normal" title="User Information">
+                                        <color key="titleColor" red="1" green="0.99501211680000001" blue="0.96936035379999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
                                 </button>
                             </barButtonItem>
                         </leftBarButtonItems>
@@ -948,7 +950,7 @@
                                         <color key="minimumTrackTintColor" red="0.2044386074" green="0.66274509800000003" blue="0.54016993840000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.2044386074" green="0.66274509800000003" blue="0.54016993840000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="IntervalSlider:" destination="W4o-f2-jeH" eventType="valueChanged" id="iYd-fJ-ZQu"/>
+                                            <action selector="IntervalSlider:" destination="W4o-f2-jeH" eventType="valueChanged" id="f9F-te-NjZ"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Every" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqu-jg-UQ9">
@@ -982,39 +984,39 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csq-Lr-cUq" customClass="checkBox" customModule="medical_app" customModuleProvider="target">
-                                        <rect key="frame" x="12" y="301" width="21" height="21"/>
+                                        <rect key="frame" x="12" y="287" width="21" height="21"/>
                                         <connections>
                                             <action selector="alarmAction:" destination="W4o-f2-jeH" eventType="touchUpInside" id="y3w-CV-hrp"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Local Notification With Alarm" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-5i-NFO">
-                                        <rect key="frame" x="41" y="301" width="170" height="21"/>
+                                        <rect key="frame" x="41" y="287" width="170" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-6" minValue="-6" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="ACq-B8-dlU">
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="ACq-B8-dlU">
                                         <rect key="frame" x="10" y="254" width="249" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.2044386074" green="0.66274509800000003" blue="0.54016993840000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.2044386074" green="0.66274509800000003" blue="0.54016993840000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="FreqSlider:" destination="W4o-f2-jeH" eventType="valueChanged" id="au1-L1-0kg"/>
+                                            <action selector="FreqSlider:" destination="W4o-f2-jeH" eventType="valueChanged" id="P3U-zW-xy3"/>
                                         </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me6-mj-CNP" customClass="checkBox" customModule="medical_app" customModuleProvider="target">
-                                        <rect key="frame" x="12" y="330" width="21" height="21"/>
+                                        <rect key="frame" x="12" y="316" width="21" height="21"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuD-fq-tpE">
-                                        <rect key="frame" x="41" y="330" width="170" height="21"/>
+                                        <rect key="frame" x="41" y="316" width="170" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwf-LR-PVm" customClass="checkBox" customModule="medical_app" customModuleProvider="target">
-                                        <rect key="frame" x="12" y="359" width="21" height="21"/>
+                                        <rect key="frame" x="12" y="345" width="21" height="21"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuV-He-WsP">
-                                        <rect key="frame" x="41" y="359" width="170" height="21"/>
+                                        <rect key="frame" x="41" y="345" width="170" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1024,24 +1026,23 @@
                                         <color key="minimumTrackTintColor" red="0.2044386074" green="0.66274509800000003" blue="0.54016993840000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.2044386074" green="0.66274509800000003" blue="0.54016993840000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="FreqSlider:" destination="W4o-f2-jeH" eventType="valueChanged" id="Hq9-LX-WNX"/>
-                                            <action selector="TabsSlider:" destination="W4o-f2-jeH" eventType="valueChanged" id="jZG-Rb-knd"/>
+                                            <action selector="TabsSlider:" destination="W4o-f2-jeH" eventType="valueChanged" id="0PV-TJ-eJz"/>
                                         </connections>
                                     </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLp-nx-uwg">
+                                        <rect key="frame" x="49" y="374" width="192" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="SaveMed:" destination="W4o-f2-jeH" eventType="touchUpInside" id="fGO-47-Mpz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.76470595598220825" green="0.90980398654937744" blue="0.94117653369903564" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Tv2-Ui-5cY">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="lDh-iN-VCa">
-                            <color key="tintColor" red="1" green="0.99501211680000001" blue="0.96936035379999996" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="SaveMed:" destination="W4o-f2-jeH" id="v57-8a-etv"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Tv2-Ui-5cY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="Dosagelbl" destination="JYx-12-066" id="HXt-Ih-kZv"/>
@@ -1053,7 +1054,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNf-M3-rAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5285" y="-69"/>
+            <point key="canvasLocation" x="5291" y="-25"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="J9r-A2-qbU">

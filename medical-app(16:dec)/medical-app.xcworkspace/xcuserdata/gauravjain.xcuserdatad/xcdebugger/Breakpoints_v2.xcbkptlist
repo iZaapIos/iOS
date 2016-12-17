@@ -9,44 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503043009.188148"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "closeAction(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503043009.188148"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "medical-app/SelectedTabltViewController.swift"
-            timestampString = "502874824.095169"
+            timestampString = "503668503.14973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "alarmAction(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "medical-app/SelectedTabltViewController.swift"
-            timestampString = "502874830.554716"
+            timestampString = "503668503.14973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "alarmAction(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -121,220 +89,59 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503042404.172143"
+            filePath = "medical-app/SelectedTabltViewController.swift"
+            timestampString = "503662450.570488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503066275.208706"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503066275.208706"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503066275.208706"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503066275.208706"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503066275.208706"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "SelectedTabltViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "medical_app.UserDetailsViewController.(viewDidAppear (medical_app.UserDetailsViewController) -&gt; (Swift.Bool) -&gt; ()).(closure #1)"
+                  symbolName = "medical_app.SelectedTabltViewController.medic.getter : __ObjC.NSArray"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(09:dec)/medical-app/UserDetailsViewController.swift"
-                  timestampString = "503648673.790507"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/SelectedTabltViewController.swift"
+                  timestampString = "503668510.056376"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "6997">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "medical_app.UserDetailsViewController.(viewDidAppear (medical_app.UserDetailsViewController) -&gt; (Swift.Bool) -&gt; ()).(closure #1).(closure #1)"
+                  symbolName = "medical_app.SelectedTabltViewController.init (medical_app.SelectedTabltViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.SelectedTabltViewController"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(09:dec)/medical-app/UserDetailsViewController.swift"
-                  timestampString = "503648673.790823"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/SelectedTabltViewController.swift"
+                  timestampString = "503668510.056838"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "15">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "708">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "medical_app.SelectedTabltViewController.init (medical_app.SelectedTabltViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.SelectedTabltViewController&gt;"
+                  moduleName = "medical-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/SelectedTabltViewController.swift"
+                  timestampString = "503668510.057337"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "628">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -345,13 +152,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503066275.208706"
+            filePath = "medical-app/SelectedTabltViewController.swift"
+            timestampString = "503667189.731787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "SaveMed(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -361,29 +168,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503066275.208706"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/SelectedTabltViewController.swift"
+            timestampString = "503668503.14973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "144"
             endingLineNumber = "144"
-            landmarkName = "reset(_:)"
+            landmarkName = "SaveMed(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -393,13 +184,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medicationDetails.swift"
+            timestampString = "503662506.297988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "setMedInfo(_:dosage:NoOfTab:freq:interval:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -409,13 +200,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medicationDetails.swift"
+            timestampString = "503662507.057274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "setMedInfo(_:dosage:NoOfTab:freq:interval:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -425,13 +216,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medicationDetails.swift"
+            timestampString = "503662508.401655"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "saveMedInfo(_:dosage:NoOfTab:freq:interval:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -441,44 +232,92 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medicationDetails.swift"
+            timestampString = "503662509.169282"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "saveMedInfo(_:dosage:NoOfTab:freq:interval:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/medicationDetails.swift"
+            timestampString = "503662512.745514"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "saveMedInfo(_:dosage:NoOfTab:freq:interval:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/medicationDetails.swift"
+            timestampString = "503662513.569009"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "saveMedInfo(_:dosage:NoOfTab:freq:interval:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663764.396556"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "medlist"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "medical_app.UserDetailsViewController.reset (medical_app.UserDetailsViewController)(Swift.AnyObject) -&gt; ()"
+                  symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(name : Swift.String, dosage : Swift.String, NoOfTab : Swift.String, freq : Swift.String, interval : Swift.String, key : Swift.String) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(09:dec)/medical-app/UserDetailsViewController.swift"
-                  timestampString = "503648673.798361"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/medlist.swift"
+                  timestampString = "503668510.079512"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "141"
-                  endingLineNumber = "141"
-                  offsetFromSymbolStart = "15315">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "300">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "medical_app.UserDetailsViewController.(reset (medical_app.UserDetailsViewController) -&gt; (Swift.AnyObject) -&gt; ()).(closure #2)"
+                  symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(snapshot : __ObjC.FIRDataSnapshot) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(09:dec)/medical-app/UserDetailsViewController.swift"
-                  timestampString = "503648673.798613"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/medlist.swift"
+                  timestampString = "503668510.07991"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "143"
-                  endingLineNumber = "143"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "96">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -489,124 +328,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663765.395173"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "medlist"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "medical_app.UserDetailsViewController.reset (medical_app.UserDetailsViewController)(Swift.AnyObject) -&gt; ()"
+                  symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(name : Swift.String, dosage : Swift.String, NoOfTab : Swift.String, freq : Swift.String, interval : Swift.String, key : Swift.String) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(09:dec)/medical-app/UserDetailsViewController.swift"
-                  timestampString = "503648673.805737"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/medlist.swift"
+                  timestampString = "503668510.082361"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "10860">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "300">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "medical_app.UserDetailsViewController.(reset (medical_app.UserDetailsViewController) -&gt; (Swift.AnyObject) -&gt; ()).(closure #1)"
+                  symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(snapshot : __ObjC.FIRDataSnapshot) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(09:dec)/medical-app/UserDetailsViewController.swift"
-                  timestampString = "503648673.806022"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/medlist.swift"
+                  timestampString = "503668510.082804"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "96">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -617,13 +376,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663773.771605"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "init(snapshot:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -633,13 +392,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663774.811248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "init(snapshot:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -649,24 +408,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "reset(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetails.swift"
-            timestampString = "503067416.988785"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663776.259466"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -681,40 +424,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetails.swift"
-            timestampString = "503067416.988785"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "init(snapshot:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetails.swift"
-            timestampString = "503067416.988785"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "init(snapshot:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetails.swift"
-            timestampString = "503067416.988785"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663777.699439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -729,12 +440,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetails.swift"
-            timestampString = "503067416.988785"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663778.427151"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "init(snapshot:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -745,12 +456,28 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetails.swift"
-            timestampString = "503067416.988785"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663779.155106"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "init(snapshot:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663781.611354"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "toAnyObject()"
             landmarkType = "5">
          </BreakpointContent>
@@ -761,13 +488,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663784.675238"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "init(name:dosage:NoOfTab:freq:interval:key:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -777,13 +504,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068520.130111"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663785.322991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "init(name:dosage:NoOfTab:freq:interval:key:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -793,13 +520,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068443.094829"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663786.627287"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "init(name:dosage:NoOfTab:freq:interval:key:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -809,13 +536,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068445.16679"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663788.771177"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init(name:dosage:NoOfTab:freq:interval:key:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -825,13 +552,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068456.998508"
+            filePath = "medical-app/medlist.swift"
+            timestampString = "503663797.611108"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "medlist"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(name : Swift.String, dosage : Swift.String, NoOfTab : Swift.String, freq : Swift.String, interval : Swift.String, key : Swift.String) -&gt; medical_app.medlist"
+                  moduleName = "medical-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/medlist.swift"
+                  timestampString = "503668510.118639"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(snapshot : __ObjC.FIRDataSnapshot) -&gt; medical_app.medlist"
+                  moduleName = "medical-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gauravjain/Desktop/myprojects/medical-app(16:dec)/medical-app/medlist.swift"
+                  timestampString = "503668510.119024"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/SelectedTabltViewController.swift"
+            timestampString = "503667189.731787"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "labelPressed()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -841,13 +616,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068458.510087"
+            filePath = "medical-app/SelectedTabltViewController.swift"
+            timestampString = "503667189.731787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "labelPressed()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -857,13 +632,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503068459.902137"
+            filePath = "medical-app/SelectedTabltViewController.swift"
+            timestampString = "503666890.12368"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "labelPressed()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -873,13 +648,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/UserDetailsViewController.swift"
-            timestampString = "503069122.89677"
+            filePath = "medical-app/SelectedTabltViewController.swift"
+            timestampString = "503667837.354411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "reset(_:)"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "SaveMed(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/AddedMedicationListViewController.swift"
+            timestampString = "503668292.81308"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/AddedMedicationListViewController.swift"
+            timestampString = "503668293.436818"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/AddedMedicationListViewController.swift"
+            timestampString = "503668293.88555"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

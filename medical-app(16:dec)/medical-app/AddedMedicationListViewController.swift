@@ -16,6 +16,7 @@ class AddedMedicationListViewController: UITableViewController {
     
     var databaseRef: FIRDatabaseReference!
     var Addedlist = [medlist]()
+    var mineSpillere2 = [String]()
     
     override func viewDidLoad()
     {
@@ -23,6 +24,10 @@ class AddedMedicationListViewController: UITableViewController {
         
         databaseRef = FIRDatabase.database().reference()
         MedlistDataFromFirebase()
+        
+        let otherVC = SelectedTabltViewController()
+        mineSpillere2 = otherVC.medic as! [String]
+        print(mineSpillere2)
         
     }
     

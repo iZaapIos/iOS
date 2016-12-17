@@ -22,7 +22,7 @@ struct medlist{
     var freq : String!
     var interval : String!
     
-    
+    //juz assigning the values to the array
     init(name: String,dosage: String,NoOfTab: String,freq: String,interval: String,key: String = ""){
         
         self.dosage = dosage

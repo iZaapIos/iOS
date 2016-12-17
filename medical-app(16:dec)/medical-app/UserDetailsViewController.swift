@@ -153,8 +153,7 @@ class UserDetailsViewController: UIViewController {
                 print(self.pass_word)
                 
             }
-//        let updatenote = UserDetails(firstname: first_name!, lastname: last_name!, email: e_mail!, phno: ph_no!, password: pass_word!, key:key)
-//        print(UserDetails)
+
         let updatenote = UserDetails(firstname: first_name!, lastname: last_name!, email: e_mail!, phno: ph_no!, password: pass_word!)
 
         print(updatenote)

@@ -140,3 +140,17 @@ class roughVC: UIViewController {
                
     }
 }
+
+
+
+//changes in this updation
+//1.check box code (checkboxcell.swift,RemedyViewController.swift)
+//2.user details code(UserDetailsViewController.swift)
+
+//3. file name changed RemedyVc to RemedyViewController.swift
+//4.old one is deleted.
+
+// design wise
+//5.added buttons on home page
+//6.added buttons on medicationTableViewController
+//7.
