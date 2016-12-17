@@ -23,6 +23,8 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
     let medDetails = MedicationDetails()
     
     
+    @IBOutlet weak var notificationlbl: UILabel?
+    
     var databaseRef: FIRDatabaseReference!{
         return FIRDatabase.database().reference()
     }
@@ -34,10 +36,10 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
         self.navigationItem.title = TopicPassed
         
         
-        //stepper functions
-        stepper.wraps = true
-        stepper.autorepeat = true
-        stepper.maximumValue = 10
+//        //stepper functions
+//        stepper.wraps = true
+//        stepper.autorepeat = true
+//        stepper.maximumValue = 10
         
       
         //label clickable
@@ -94,8 +96,14 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
     }
 
     
-    @IBAction func stepperAction(sender: UIStepper) {
-        TabNoLbl.text = Int(sender.value).description
+//    @IBAction func stepperAction(sender: UIStepper) {
+//        TabNoLbl.text = Int(sender.value).description
+//    }
+    @IBAction func TabsSlider(sender: UISlider) {
+        var TabValue = Int(sender.value)
+        
+        TabNoLbl.text = "\(TabValue)"
+        
     }
     
 
@@ -148,6 +156,17 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
         Dosagelbl.text = data
     }
 
+    @IBAction func alarmAction(sender: checkBox) {
+        
+        
+        if sender.isChecked {
+            
+            print(notificationlbl!.text)
+        } else {
+           
+            print("Unchecked")
+        }
+    }
     
     }
     

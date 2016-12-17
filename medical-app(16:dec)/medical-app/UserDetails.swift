@@ -11,31 +11,24 @@ import Firebase
 import FirebaseDatabase
 
 struct UserDetails{
-    
-    
-    var uid : String!
-    var username: String!
     var firstname:String!
     var lastname:String!
     var email:String!
     var phno:String!
-//    var password:String!
+    var password:String!
     var ref: FIRDatabaseReference?
     var key: String!
     
     
-    init(username: String,firstname: String,lastname: String,email: String,phno: String,key: String = ""){
-//    init(username: String,firstname: String,lastname: String,email: String,phno: String,password:String,key: String = ""){
+    init(firstname: String,lastname: String,email: String,phno: String,password:String,key: String = ""){
     
-//    init(email: String,key: String = ""){
     
 //        self.uid = userId
-        self.username = username
         self.firstname = firstname
         self.lastname = lastname
         self.email = email
         self.phno = phno
-//        self.password = password
+        self.password = password
         self.key = key
         self.ref = FIRDatabase.database().reference()
     }
@@ -44,16 +37,17 @@ struct UserDetails{
         
         self.key = snapshot.key
       
-        self.username = snapshot.value!["username"] as! String
-//        print(username)
+
         self.firstname = snapshot.value!["firstname"] as! String
-//        print(firstname)
-//        self.uid = snapshot.value!["uid"] as? String
+        print(firstname)
         lastname = snapshot.value!["lastname"] as! String
+        print(lastname)
         email = snapshot.value!["email"] as! String
         print(email)
         phno = snapshot.value!["phno"] as! String
-//        password = snapshot.value!["password"] as! String
+        print(phno)
+        password = snapshot.value!["password"] as! String
+        print(password)
         self.ref = snapshot.ref
         print(self.ref)
         
@@ -63,8 +57,7 @@ struct UserDetails{
     func toAnyObject() -> [String: AnyObject] {
         
 
-        return ["username": username,"firstname": firstname,"lastname": lastname,"email": email,"phno": phno]
-//    return ["email": email]
+        return ["firstname": firstname,"lastname": lastname,"email": email,"phno": phno,"password": password]
         
     }
 }

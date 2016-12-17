@@ -33,6 +33,7 @@ class DosagePopUpTableViewController: UITableViewController {
         
         self.navigationController?.navigationBarHidden = true
         DosagePassed = Manager.DosageText
+        print(DosagePassed)
         DosageArr = DosagePassed.componentsSeparatedByString(",")
         
         

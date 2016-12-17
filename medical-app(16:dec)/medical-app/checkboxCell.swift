@@ -13,6 +13,7 @@ class checkboxCell: UITableViewCell {
     @IBOutlet weak var checkButton: UIButton!
     
     
+    @IBOutlet weak var remedyLbl: UILabel!
     
     
     override func awakeFromNib() {

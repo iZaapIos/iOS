@@ -8,17 +8,33 @@
 
 import UIKit
 
-class RemedyVC: UIViewController{
+class RemedyViewController: UIViewController{
 
     @IBOutlet weak var tableView: UITableView!
+    var RateRev: String?
+    var CmtRev: String?
+    let medic = [medlist]()
+    
+    
     
     var remedy = ["Driking Water","Heating Pad","Warm Shower","Checked Temperature","Taken Nap","Taken Medications"] as NSMutableArray
     var selectedremedy = NSMutableArray()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //        print(RateRev)
+        //        print("loaded")
+        //        print(CmtRev)
+        
+    }
     
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,8 +51,8 @@ class RemedyVC: UIViewController{
     {
     let  contact = remedy.objectAtIndex(indexPath.row)
         let cell:checkboxCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! checkboxCell
-        cell.textLabel?.text = String(contact)
-        cell.checkButton.addTarget(self, action: "tickClicked",forControlEvents: UIControlEvents.TouchUpInside)
+        cell.remedyLbl.text = String(contact)
+        cell.checkButton.addTarget(self, action: "tickClicked:",forControlEvents: UIControlEvents.TouchUpInside)
         cell.checkButton.tag = indexPath.row
         
         if selectedremedy.containsObject(remedy.objectAtIndex(indexPath.row)){
@@ -61,16 +77,11 @@ class RemedyVC: UIViewController{
             selectedremedy.addObject(remedy.objectAtIndex(value))
         }
         
-        print("Selecetd Array \(selectedremedy)")
+        var remedyStr = selectedremedy.description // converting the array into string
+        remedyStr = remedyStr.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil) // string without quotes
+         print(remedyStr)
         
         tableView.reloadData()
         
     }
-    
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) ->CGFloat
-//    {
-//        return 80.0
-//    }
-//    
-
 }

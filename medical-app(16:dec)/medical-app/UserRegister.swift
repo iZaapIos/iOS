@@ -57,17 +57,9 @@ struct UserInfo {
         FIRAuth.auth()?.signInWithEmail(email, password: password, completion: { (user, error) in
             if error == nil {
                 print ("no error")
-                
-                
-//                
-//                let vc = self.storyboard!.instantiateViewControllerWithIdentifier("logmedVC") as! LogMedViewController
-//                UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(vc, animated: false, completion: nil)
                 if let user = user {
                     
                     print("\(user.displayName!) has signed in succesfully!")
-                   
-                    
-                    
                 }
 
                 

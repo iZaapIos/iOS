@@ -8,6 +8,6 @@
 
 import UIKit
 
-class SummaryViewController: UIViewController {
+class SummaryViewController: UITableViewController {
 
 }
