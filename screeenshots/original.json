@@ -1,0 +1,58 @@
+{
+  "medication" : [ null, {
+    "dosage" : [ "5mg" ],
+    "name" : "Tramadol(Tablet)"
+  }, {
+    "dosage" : [ "5/325mg", "7.5/325mg", "10/325mg" ],
+    "name" : "Percocet(Oxicodone/Acetaminophen)"
+  }, {
+    "dosage" : [ "5mg", "7.5mg", "10mg", "15mg", "30mg" ],
+    "name" : "Oxycodone(Tablet)"
+  }, {
+    "dosage" : [ "10mg", "15mg", "20mg", "30mg", "40mg", "60mg", "80mg" ],
+    "name" : "Oxycotin"
+  }, {
+    "dosage" : [ "10mg", "15mg", "20mg", "30mg", "40mg", "60mg", "80mg" ],
+    "name" : "OcycodoneExtendedreleaseTablet"
+  }, {
+    "dosage" : [ "2mg", "4mg", "8mg" ],
+    "name" : "Dilaudid"
+  }, {
+    "dosag" : [ "2mg", "4mg", "8mg" ],
+    "name" : "Hydromrphone"
+  }, {
+    "dosage" : [ "3/300mg", "7.5/300mg", "10/300mg" ],
+    "name" : "Vicodin(Hydrocodone/Acetaminophen)"
+  }, {
+    "dosage" : [ "15mg", "30mg" ],
+    "name" : "Morphine(Tablet)"
+  }, {
+    "dosage" : [ "15mg", "30mg", "60mg", "100mg" ],
+    "name" : "MSCotin"
+  }, {
+    "dosage" : [ "15mg", "30mg", "60mg", "100mg" ],
+    "name" : "Morphine12hrExtendedreleaseTablet"
+  }, {
+    "dosage" : [ "5mg", "10mg" ],
+    "name" : "Methadone"
+  }, {
+    "dosage" : [ "12mcg", "50mcg", "75mcg", "100mcg" ],
+    "name" : "Fentanylpatch"
+  }, {
+    "dosage" : [ "500mg" ],
+    "name" : "HydroxyUrea"
+  }, {
+    "dosage" : [ "nil" ],
+    "name" : "other"
+  } ],
+  "users" : {
+    "-KZB956lciUzOtAZTrUK" : {
+      "email" : "devraj@gmail.com",
+      "firstname" : "dev",
+      "lastname" : "raj",
+      "password" : "izaap123",
+      "phno" : "9876543211",
+      "username" : "dev"
+    }
+  }
+}
