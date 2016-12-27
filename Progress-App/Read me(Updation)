@@ -1,0 +1,44 @@
+//changes in this updation
+//1.check box code (checkboxcell.swift,RemedyViewController.swift)
+//2.user details code(UserDetailsViewController.swift)
+
+//3. file namefghfgh//changes in this updation
+//1.check box code (checkboxcell.swift,RemedyViewController.swift)
+//2.user details code(UserDetailsViewController.swift)
+
+//3. file name changed RemedyVc to RemedViewController.swift
+//4.old one is deleted.
+
+// design wise
+//5.added buttons on home page
+//6.added buttons on medicationTableViewController
+
+
+// code changes  on 22 DEC
+//1.changed dosage field in firebase(from string to array)
+//2.code changes in (medicineViewController.swift)
+//3.deleted (medication.swift) file
+//4. added other medicine view controller
+
+//code changes om 26 Dec
+// file added ContactUsViewController.swift
+//on story board added ContactUsVC
+
+changed RemedyVc to RemedViewController.swift
+//4.old one is deleted.
+
+// design wise
+//5.added buttons on home page
+//6.added buttons on medicationTableViewController
+
+
+// code changes  on 22 DEC
+//1.changed dosage field in firebase(from string to array)
+//2.code changes in (medicineViewController.swift)
+//3.deleted (medication.swift) file
+//4. added other medicine view controller
+
+//code changes om 26 Dec
+// file added ContactUsViewController.swift
+//on story board added ContactUsVC
+
