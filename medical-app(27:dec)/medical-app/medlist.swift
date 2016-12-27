@@ -21,6 +21,7 @@ struct medlist{
     var NoOfTab : String!
     var freq : String!
     var interval : String!
+    var emptyDict = [String: String]()
     
     //juz assigning the values to the array
     init(name: String,dosage: String,NoOfTab: String,freq: String,interval: String,key: String = ""){
@@ -56,11 +57,15 @@ struct medlist{
     func toAnyObject() -> [String: AnyObject] {
         
         return ["name": name, "dosage": dosage,"NoOfTab": NoOfTab,"freq": freq,"interval": interval]
+        
   }
-    func medInfo(name: String,dosage: String,NoOfTab: String,freq: String,interval: String)
-    {
-//        print(name,dosage: dosage,NoOfTab: NoOfTab,freq: freq,interval: interval)
-    print(name)
+     private mutating func dict(name: String){
+        
+        emptyDict = ["name": name]
+        print(emptyDict)
     }
+
+    
+
 }
 

@@ -36,25 +36,13 @@ class DosagePopUpTableViewController: UITableViewController {
         print(DosagePassed)
         DosageArr = DosagePassed.componentsSeparatedByString(",")
         
-        
-//        let ref = FIRDatabase.database().reference().child("medication").child("dosage")
-//        
-//        ref.observeSingleEventOfType(.Value, withBlock: { (snapshot) in
-//            if snapshot.exists() {
-//                if let all = (snapshot.value?.allKeys)! as? [String]{
-//                    for a in all{
-//                        if let products = snapshot.value![a] as? [[String:String]]{
-//                            self.snusBrandsArray.append(["key":a,"value":products])
-//                        }
-//                    }
-//                    self.tableview.reloadData()
-//                }
-//            }
-//        })
+
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
     return DosageArr!.count
+        
     }
     
     
@@ -70,7 +58,7 @@ class DosagePopUpTableViewController: UITableViewController {
     override func  tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let seldosage = DosageArr![tableview.indexPathForSelectedRow!.row]
-    
+     print(seldosage)
         if delegate != nil {
              let data = seldosage
             delegate?.SentDosage(data)

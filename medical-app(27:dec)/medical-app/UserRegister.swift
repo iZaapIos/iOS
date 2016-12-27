@@ -12,10 +12,6 @@ import FirebaseStorage
 import FirebaseAuth
 import FirebaseDatabase
 
-
-
-
-
 struct UserInfo {
     
     var storyboard: UIStoryboard?

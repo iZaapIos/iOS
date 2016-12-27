@@ -14,13 +14,13 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
     
     var TopicPassed:String!
     var popover: DosagePopUpTableViewController? = nil
+    var db: [MedicationDetails]=[MedicationDetails]()
    
     @IBOutlet  var Dosagelbl: UILabel!
     @IBOutlet weak var IntervalLbl: UILabel!
     @IBOutlet weak var TabNoLbl: UILabel!
-    @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var freqlbl: UILabel!
-    var medic = [String]()
+    
     
     
     @IBOutlet weak var notificationlbl: UILabel?
@@ -35,13 +35,6 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
         // to pass selected medication name to navigation
         self.navigationItem.title = TopicPassed
         
-        
-//        //stepper functions
-//        stepper.wraps = true
-//        stepper.autorepeat = true
-//        stepper.maximumValue = 10
-        
-      
         //label clickable
         Dosagelbl.userInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("labelPressed"))
@@ -86,19 +79,8 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
 //        popoverPresentationViewController?.sourceView = Dosagelbl
 //          popoverPresentationViewController?.sourceRect = CGRectMake(Dosagelbl.frame.width, Dosagelbl.frame.height*3, 0, 0)
         
-            popoverPresentationViewController?.sourceView = Dosagelbl
-            popoverPresentationViewController?.sourceRect = Dosagelbl.bounds
-//            popoverPresentationViewController?.sourceRect = CGRectMake(Dosagelbl.frame.width, Dosagelbl.frame.height*3, 0, 0)
-//
-        
-        
-        
-//        let position = CGRectMake(aView.bounds.origin.x, aView.bounds.origin.y + 125, aView.bounds.size.width, aView.bounds.size.height)
-        
-// _popoverPresentationController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds),0,0)
-        
-//        popoverPresentationViewController?.sourceRect = Dosagelbl.bounds
-        
+        popoverPresentationViewController?.sourceView = Dosagelbl
+        popoverPresentationViewController?.sourceRect = Dosagelbl.bounds
         presentViewController(popover!, animated: true, completion: nil)
 
    }
@@ -137,37 +119,22 @@ class SelectedTabltViewController: UIViewController,UIPopoverPresentationControl
         
 //        let medRef = databaseRef.child("MedicationDetails").child("medicine").childByAutoId()
 ////
-        var medic = medlist(name: TopicPassed, dosage: Dosagelbl.text!, NoOfTab: TabNoLbl.text!, freq: freqlbl.text!, interval: IntervalLbl.text!)
+//        var medic = medlist(name: TopicPassed, dosage: Dosagelbl.text!, NoOfTab: TabNoLbl.text!, freq: freqlbl.text!, interval: IntervalLbl.text!)
         
-        print(medic)
+//        print(medic)
+        
+         let medic = MedicationDetails(name: TopicPassed, dosage: Dosagelbl.text!)
+        
+            
+        
+//         medicArray.append(medic)
         
         
-        
-        
-//         medRef.setValue(medic.toAnyObject())
-//
-//        //alert action
-//     let alertController = UIAlertController(title: "Success", message: "Medication Added Successfully", preferredStyle: .Alert)
-//        
-//        let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
-//       alertController.addAction(defaultAction)
-        
-
-        
-//        medDetails.setMedInfo(TopicPassed, dosage: Dosagelbl.text!, NoOfTab: TabNoLbl.text!, freq:freqlbl.text!, interval: IntervalLbl.text!)
-        
-//        var storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        var controller = storyboard.instantiateViewControllerWithIdentifier("remedyVC") as! RemedyViewController
-        
-                
-//        self.presentViewController(controller, animated: true, completion: nil)
         
     }
-    
-    
-    
-    func SentDosage(data: String){
+        func SentDosage(data: String){
         
+            print(data)
         Dosagelbl.text = data
     }
 

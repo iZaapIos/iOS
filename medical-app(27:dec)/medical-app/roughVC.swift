@@ -15,18 +15,7 @@ class roughVC: UIViewController {
     
     var RateRev: String?
     var CmtRev: String?
-    let medic = [medlist]()
-   var remedyArray:[String] = ["","","","","",""]
-    
-//    //buttons utlets
-//    
-//    @IBOutlet weak var btn1: checkBox!
-//    @IBOutlet weak var btn2: checkBox!
-//    @IBOutlet weak var btn3: checkBox!
-//    @IBOutlet weak var btn4: checkBox!
-//    @IBOutlet weak var btn5: checkBox!
-//    @IBOutlet weak var btn6: checkBox!
-    
+    var remedyArray:[String] = ["","","","","",""]
     
     //label outlets
     @IBOutlet weak var lbl1: UILabel!
@@ -39,9 +28,6 @@ class roughVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(RateRev)
-//        print("loaded")
-//        print(CmtRev)
         
     }
 
@@ -147,10 +133,15 @@ class roughVC: UIViewController {
 //1.check box code (checkboxcell.swift,RemedyViewController.swift)
 //2.user details code(UserDetailsViewController.swift)
 
-//3. file name changed RemedyVc to RemedyViewController.swift
+//3. file name changed RemedyVc to RemedViewController.swift
 //4.old one is deleted.
 
 // design wise
 //5.added buttons on home page
 //6.added buttons on medicationTableViewController
-//7.
+
+
+// code changes  on 22 DEC
+//1.changed dosage field in firebase(from string to array)
+//2.code changes in (medicineViewController.swift)
+//3.deleted (medication.swift) file
