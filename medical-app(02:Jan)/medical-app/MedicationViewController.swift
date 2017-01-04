@@ -12,7 +12,6 @@ import Firebase
 class MedicationViewController: UIViewController,UIPopoverPresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableview: UITableView!
-//     var itemslist = [medication]()
     var medicinelist: [String]=[]
     var dosagelist: [String]=[]
  
@@ -103,8 +102,8 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
                 }
                 if let dosage = item.value!!["dosage"] as? NSArray
                 {
-//                    print(dosage.description)
-//                    print(dosage[0])
+                    print(dosage.count)
+
                     
         var dosageStr = dosage.description // converting the array into string
 //
@@ -116,8 +115,8 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
                             (substring, _, _, _) -> () in
                            
                             self.dosagelist.append(substring!)
-                            print(self.dosagelist)
-                    }
+                            print(self.dosagelist.count)
+                                               }
                 }
                 
             }

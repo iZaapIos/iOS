@@ -27,28 +27,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UINavigationControllerDele
         IQKeyboardManager.sharedManager().enable = true      
         
         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let currentUser = FIRAuth.auth()!.currentUser
-        if currentUser != nil
-        {
-        
-
-            
-//            let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-            let rootViewController:UIViewController = storyboard.instantiateViewControllerWithIdentifier("logmedVC") as! LogMedViewController
-            navigationController.viewControllers = [rootViewController]
-            self.window?.rootViewController = navigationController
-           
-
-        }
-        else
-        {
-            let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-            let rootViewController:UIViewController = storyboard.instantiateViewControllerWithIdentifier("firstVC") as! ViewController
-            navigationController.viewControllers = [rootViewController]
-            self.window?.rootViewController = navigationController
-
-        }
+//        let currentUser = FIRAuth.auth()!.currentUser
+//        if currentUser != nil
+//        {
+//            let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+//            let rootViewController:UIViewController = storyboard.instantiateViewControllerWithIdentifier("logmedVC") as! LogMedViewController
+//            navigationController.viewControllers = [rootViewController]
+//            self.window?.rootViewController = navigationController
+//           
+//
+//        }
+//        else
+//        {
+//            let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+//            let rootViewController:UIViewController = storyboard.instantiateViewControllerWithIdentifier("firstVC") as! ViewController
+//            navigationController.viewControllers = [rootViewController]
+//            self.window?.rootViewController = navigationController
+//
+//        }
 
         return true
     }

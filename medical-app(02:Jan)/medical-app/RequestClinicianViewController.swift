@@ -1,14 +1,14 @@
 //
-//  ContactUsViewController.swift
+//  RequestClinicianViewController.swift
 //  medical-app
 //
-//  Created by Administrator on 22/12/16.
+//  Created by Administrator on 28/12/16.
 //  Copyright © 2016 Administrator. All rights reserved.
 //
 
 import UIKit
 
-class ContactUsViewController: UIViewController {
+class RequestClinicianViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
