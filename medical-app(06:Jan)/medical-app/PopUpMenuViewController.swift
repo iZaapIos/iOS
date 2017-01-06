@@ -28,7 +28,7 @@ class PopUpMenuViewController: UIViewController,  UIPopoverPresentationControlle
     @IBAction func LogOut(sender: AnyObject) {
     try! FIRAuth.auth()!.signOut()
     if let storyboard = self.storyboard {
-        let vc = storyboard.instantiateViewControllerWithIdentifier("firstVC") as! ViewController
+        let vc = storyboard.instantiateViewControllerWithIdentifier("firstVC") as! FirstViewcontroller
         self.presentViewController(vc, animated: false, completion: nil)
        }
     }

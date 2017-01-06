@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 var storyboard: UIStoryboard?
 
-class ViewController: UIViewController {
+class FirstViewcontroller: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()

@@ -19,13 +19,7 @@ struct UserInfo {
         return FIRDatabase.database().reference()
     }
     
-    var storageRef: FIRStorageReference {
-        return FIRStorage.storage().reference()
-    }
-    
-    
-    
-    // 3 --- Saving the user Info in the database
+        // 3 --- Saving the user Info in the database
     private func saveInfo(user: FIRUser!, username: String, password: String, firstname: String, lastname: String,phno: String){
         
         // Create our user dictionary info\
@@ -82,7 +76,7 @@ struct UserInfo {
     private func setUserInfo(user: FIRUser!,  username: String, password: String,firstname: String, lastname: String,phno: String){
         
         
-        let imageRef = storageRef.child("users")
+//        let imageRef = storageRef.child("users")
         
         let changeRequest = user.profileChangeRequest()
         changeRequest.displayName = username
