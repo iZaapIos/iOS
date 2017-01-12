@@ -1,55 +1,66 @@
 //
-//  ClinicianContactViewController.swift
-//  medical-app
+//  ViewController.swift
+//  UITextFieldDropDownList
 //
-//  Created by Administrator on 28/12/16.
-//  Copyright © 2016 Administrator. All rights reserved.
+//  Created by Lawrence F MacFadyen on 2016-08-06.
+//  Copyright © 2016 LawrenceM. All rights reserved.
 //
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
-//class ClinicianContactViewController: UIViewController {
-    class ClinicianContactViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
-    
+class ClinicianContactViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
+
+//     The sample values
     var values = ["Physician", "Pharmacist", "Nurse", "Physician Assistant","Clinical Researcher"]
+
+    var databaseRef: FIRDatabaseReference! {
+        return FIRDatabase.database().reference()
+    }
     let cellReuseIdentifier = "cell"
-    
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
-        
-     @IBOutlet weak var clinTextField:UITextField!
-    @IBOutlet  weak var tableview: UITableView!
     
+    // Using simple subclass to prevent the copy/paste menu
+    // This is optional, and a given app may want a standard UITextField
+    @IBOutlet weak var clinTextField: dropTextField!
     @IBOutlet var clinName: UITextField!
     @IBOutlet var clinEmail: UITextField!
     @IBOutlet var clinNum: UITextField!
+    
     var clin:Clinician?
+    @IBOutlet weak var tableView: UITableView!
     
     // If user changes text, hide the tableView
     @IBAction func textFieldChanged(sender: AnyObject) {
-        tableview.hidden = true
+        tableView.hidden = true
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableview.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
-        
-        tableview.delegate = self
-        tableview.dataSource = self
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+
+        tableView.delegate = self
+        tableView.dataSource = self
         clinTextField.delegate = self
         
-        clinTextField.hidden = true
+        tableView.hidden = true
         
         // Manage tableView visibility via TouchDown in textField
         clinTextField.addTarget(self, action: Selector("textFieldActive"), forControlEvents: UIControlEvents.TouchDown)
     }
+    
+    override func viewDidLayoutSubviews()
+    {
+        // Assumption is we're supporting a small maximum number of entries
+        // so will set height constraint to content size
+        // Alternatively can set to another size, such as using row heights and setting frame
+        heightConstraint.constant = tableView.contentSize.height
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
     
     // Manage keyboard and tableView visibility
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
@@ -58,37 +69,30 @@ import Firebase
         {
             return;
         }
-        if touch.view != tableview
+        if touch.view != tableView
         {
             clinTextField.endEditing(true)
-            tableview.hidden = true
+            tableView.hidden = true
         }
+        
     }
     
     // Toggle the tableView visibility when click on textField
     func textFieldActive() {
-        tableview.hidden = !tableview.hidden
+        tableView.hidden = !tableView.hidden
     }
-        
-        
-        override func viewDidLayoutSubviews()
-        {
-            
-            heightConstraint.constant = tableview.contentSize.height
-        }
-
     
     // MARK: UITextFieldDelegate
-    func textFieldDidEndEditing(textField: UITextField) {
-        // TODO: Your app can do something when textField finishes editing
-        print("The textField ended editing. Do something based on app requirements.")
-    }
+//    func textFieldDidEndEditing(textField: UITextField) {
+//        // TODO: Your app can do something when textField finishes editing
+//        print("The textField ended editing. Do something based on app requirements.")
+//    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
-    
+
     // MARK: UITableViewDataSource
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -112,33 +116,28 @@ import Firebase
         // endEditing can trigger some other action according to requirements
         clinTextField.text = values[indexPath.row]
         tableView.hidden = true
-        clinTextField.endEditing(true)
+       clinTextField.endEditing(true)
     }
-    
+
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.0
     }
-
-    
     @IBAction func Add(sender: AnyObject)
     {
+        var clinician = self.clinTextField.text
+        var Name = self.clinName.text
+        var email = self.clinEmail.text
+        var phno = self.clinNum.text
+        var u_id = FIRAuth.auth()?.currentUser?.uid
+
+        let ref = databaseRef.child("Clinician Details").childByAutoId()
+
+        let updatenote = Clinician(clinician:clinTextField.text!, Name:clinName.text!,email:clinEmail.text!,phno:clinNum.text!,uid:u_id!)
+        print(updatenote)
+        ref.setValue(updatenote.toAnyObject())
         
-        clin?.clinician = self.clinTextField.text
-        clin?.Name = self.clinName.text
-        clin?.email = self.clinEmail.text
-        clin?.phno = self.clinNum.text
-        
-        let ref = FIRDatabase.database().reference()
-        let key = ref.child("Clinician Details").childByAutoId()
-       
-        let dictClinician = [ "clinician":  clin?.clinician ,
-        "Name" :  clin?.Name,
-        "email" : clin?.email,
-        "Phone" : clin?.phno]
-        
-        let childUpdates = ["/Clinician Details/\(key)": dictClinician]
-//        ref.updateChildValues(childUpdates)
-            self.navigationController?.popViewControllerAnimated(true)
-        
-    }
+        self.navigationController?.popViewControllerAnimated(true)
+        }
+
 }
+

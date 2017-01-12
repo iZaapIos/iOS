@@ -85,8 +85,8 @@
                   symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(name : Swift.String, dosage : Swift.String, NoOfTab : Swift.String, freq : Swift.String, interval : Swift.String, key : Swift.String) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/medlist.swift"
-                  timestampString = "505053086.136103"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/medlist.swift"
+                  timestampString = "505905508.536088"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -100,8 +100,8 @@
                   symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(snapshot : __ObjC.FIRDataSnapshot) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/medlist.swift"
-                  timestampString = "505053086.136548"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/medlist.swift"
+                  timestampString = "505905508.536364"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -133,8 +133,8 @@
                   symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(name : Swift.String, dosage : Swift.String, NoOfTab : Swift.String, freq : Swift.String, interval : Swift.String, key : Swift.String) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/medlist.swift"
-                  timestampString = "505053086.138388"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/medlist.swift"
+                  timestampString = "505905508.538022"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -148,8 +148,8 @@
                   symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(snapshot : __ObjC.FIRDataSnapshot) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/medlist.swift"
-                  timestampString = "505053086.138674"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/medlist.swift"
+                  timestampString = "505905508.538356"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -357,8 +357,8 @@
                   symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(name : Swift.String, dosage : Swift.String, NoOfTab : Swift.String, freq : Swift.String, interval : Swift.String, key : Swift.String) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/medlist.swift"
-                  timestampString = "505053086.153288"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/medlist.swift"
+                  timestampString = "505905508.556275"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -372,8 +372,8 @@
                   symbolName = "medical_app.medlist.init (medical_app.medlist.Type)(snapshot : __ObjC.FIRDataSnapshot) -&gt; medical_app.medlist"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/medlist.swift"
-                  timestampString = "505053086.15364"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/medlist.swift"
+                  timestampString = "505905508.556552"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -611,8 +611,8 @@
                   symbolName = "medical_app.DosagePopUpTableViewController.__deallocating_deinit"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/DosagePopUpTableViewController.swift"
-                  timestampString = "505053086.162907"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/DosagePopUpTableViewController.swift"
+                  timestampString = "505905508.566132"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -626,8 +626,8 @@
                   symbolName = "medical_app.DosagePopUpTableViewController.init (medical_app.DosagePopUpTableViewController.Type)(style : __C.UITableViewStyle) -&gt; medical_app.DosagePopUpTableViewController"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/DosagePopUpTableViewController.swift"
-                  timestampString = "505053086.163207"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/DosagePopUpTableViewController.swift"
+                  timestampString = "505905508.566436"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -641,8 +641,8 @@
                   symbolName = "medical_app.DosagePopUpTableViewController.init (medical_app.DosagePopUpTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.DosagePopUpTableViewController"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/DosagePopUpTableViewController.swift"
-                  timestampString = "505053086.163489"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/DosagePopUpTableViewController.swift"
+                  timestampString = "505905508.566695"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -656,8 +656,8 @@
                   symbolName = "medical_app.DosagePopUpTableViewController.init (medical_app.DosagePopUpTableViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.DosagePopUpTableViewController&gt;"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/DosagePopUpTableViewController.swift"
-                  timestampString = "505053086.163789"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/DosagePopUpTableViewController.swift"
+                  timestampString = "505905508.566982"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -687,8 +687,8 @@
                   symbolName = "medical_app.DosagePopUpTableViewController.__deallocating_deinit"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/DosagePopUpTableViewController.swift"
-                  timestampString = "505053086.166498"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/DosagePopUpTableViewController.swift"
+                  timestampString = "505905508.569595"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -702,8 +702,8 @@
                   symbolName = "medical_app.DosagePopUpTableViewController.init (medical_app.DosagePopUpTableViewController.Type)(style : __C.UITableViewStyle) -&gt; medical_app.DosagePopUpTableViewController"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/DosagePopUpTableViewController.swift"
-                  timestampString = "505053086.16898"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/DosagePopUpTableViewController.swift"
+                  timestampString = "505905508.569856"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -717,8 +717,8 @@
                   symbolName = "medical_app.DosagePopUpTableViewController.init (medical_app.DosagePopUpTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.DosagePopUpTableViewController"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/DosagePopUpTableViewController.swift"
-                  timestampString = "505053086.169294"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/DosagePopUpTableViewController.swift"
+                  timestampString = "505905508.570181"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -732,8 +732,8 @@
                   symbolName = "medical_app.DosagePopUpTableViewController.init (medical_app.DosagePopUpTableViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.DosagePopUpTableViewController&gt;"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/DosagePopUpTableViewController.swift"
-                  timestampString = "505053086.169866"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/DosagePopUpTableViewController.swift"
+                  timestampString = "505905508.570443"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -781,8 +781,8 @@
                   symbolName = "medical_app.SelectedTabltViewController.SentDosage (medical_app.SelectedTabltViewController)(Swift.String) -&gt; ()"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/SelectedTabltViewController.swift"
-                  timestampString = "505053086.180288"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/SelectedTabltViewController.swift"
+                  timestampString = "505905508.574298"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "137"
@@ -796,8 +796,8 @@
                   symbolName = "protocol witness for medical_app.DataSentDelegate.SentDosage &lt;A where A: medical_app.DataSentDelegate&gt; (A)(Swift.String) -&gt; () in conformance medical_app.SelectedTabltViewController : medical_app.DataSentDelegate in medical_app"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/SelectedTabltViewController.swift"
-                  timestampString = "505053086.180668"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(12:Jan)/medical-app/SelectedTabltViewController.swift"
+                  timestampString = "505905508.574605"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "135"
@@ -1102,92 +1102,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "504787275.158354"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "viewDidLayoutSubviews()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
             timestampString = "505047014.529053"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
             endingLineNumber = "70"
-            landmarkName = "textFieldActive()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505047045.312468"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505047045.824328"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505047046.367664"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505047519.308523"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "touchesBegan(_:withEvent:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1203,7 +1123,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
             endingLineNumber = "69"
-            landmarkName = "textFieldActive()"
+            landmarkName = "touchesBegan(_:withEvent:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1213,91 +1133,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505049806.457839"
+            filePath = "medical-app/ViewController.swift"
+            timestampString = "505217466.732656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "ClinicianContactViewController"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "ViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.heightConstraint.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSLayoutConstraint&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.2101"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.heightConstraint.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSLayoutConstraint&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.210399"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.heightConstraint.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSLayoutConstraint&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.210698"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.ClinicianContactViewController"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.211004"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "452">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.ClinicianContactViewController&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.211283"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "400">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1306,91 +1149,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505049810.953507"
+            filePath = "medical-app/ViewController.swift"
+            timestampString = "505217466.732656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "ClinicianContactViewController"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "ViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.clinTextField.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.215461"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.clinTextField.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.216621"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.clinTextField.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.216939"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.ClinicianContactViewController"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.21723"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "556">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.ClinicianContactViewController&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.21755"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "504">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1399,247 +1165,62 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505049811.529637"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "ClinicianContactViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.tableview.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.220867"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.tableview.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.221163"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.tableview.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.221477"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.ClinicianContactViewController"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.221732"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "668">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.ClinicianContactViewController&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.221996"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "616">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505051383.947923"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "ClinicianContactViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.__deallocating_deinit"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.225139"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.ClinicianContactViewController"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.225431"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.ClinicianContactViewController&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.225689"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "medical-app/ClinicianContactViewController.swift"
-            timestampString = "505051384.964483"
+            filePath = "medical-app/ViewController.swift"
+            timestampString = "505225935.625059"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "ClinicianContactViewController"
+            landmarkName = "ViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.values.getter : Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.228276"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.values.setter : Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.228573"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.values.materializeForSet : Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.228838"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.ClinicianContactViewController"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.229156"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.ClinicianContactViewController.init (medical_app.ClinicianContactViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.ClinicianContactViewController&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(02:Jan)/medical-app/ClinicianContactViewController.swift"
-                  timestampString = "505053086.229448"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/RequestClinicianViewController.swift"
+            timestampString = "505899854.017112"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/RequestClinicianViewController.swift"
+            timestampString = "505904572.497887"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "medical-app/RequestClinicianViewController.swift"
+            timestampString = "505906636.720256"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "tableView(_:commitEditingStyle:forRowAtIndexPath:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
