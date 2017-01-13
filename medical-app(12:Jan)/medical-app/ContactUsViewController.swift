@@ -36,7 +36,8 @@ class ContactUsViewController: UIViewController,MFMailComposeViewControllerDeleg
     }
     @IBAction func SendRequest(sender: UIButton)
     {
-        let mailVC = MFMailComposeViewController()
+        
+     if let mailVC: MFMailComposeViewController = MFMailComposeViewController() {
        mailVC.mailComposeDelegate = self
        mailVC.setSubject(SubjTextField.text!)
         
@@ -58,7 +59,10 @@ class ContactUsViewController: UIViewController,MFMailComposeViewControllerDeleg
             self.PhTextField.text = ""
             self.MessageTextView.text = ""
         }
+       }
      }
+     
+    
     func  mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
