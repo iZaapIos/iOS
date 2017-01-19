@@ -1,0 +1,47 @@
+//changes in this updation
+//1.check box code (checkboxcell.swift,RemedyViewController.swift)
+//2.user details code(UserDetailsViewController.swift)
+
+//3. file name changed RemedyVc to RemedViewController.swift
+//4.old one is deleted.
+
+// design wise
+//5.added buttons on home page
+//6.added buttons on medicationTableViewController
+
+
+// code changes  on 22 DEC
+//1.changed dosage field in firebase(from string to array)
+//2.code changes in (medicineViewController.swift)
+//3.deleted (medication.swift) file
+//4. added other medicine view controller
+
+//code changes om 26 Dec
+// file added ContactUsViewController.swift
+
+//code changes on Jan 02
+//added clinicianContactViewcontroller.swift
+//added RequestClinicianVC.swift
+//added TextField.swift and clinician details
+//design wise
+//addded two more VC on storyboard
+
+//code changes 0n 12th jan
+//changes in RequestClinicianViewController.swift
+//changes in ClinicianContactViewcontroller.swift
+//in storyboard chnaged requestclinician and clinicianContactVC.
+
+
+
+completed tasks
+1.logout on popup
+2.sign in funtionality
+3.
+
+update:
+1.if alrdy entered mail means  need to throw a alert
+2.login or signin success means throws a alert
+
+
+
+
