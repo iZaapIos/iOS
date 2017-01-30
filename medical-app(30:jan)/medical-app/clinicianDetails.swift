@@ -11,22 +11,22 @@ import Firebase
 import FirebaseDatabase
 
 struct Clinician {
-    var clinician:String!
-    var Name:String!
+    var clinician_type:String!
+    var name:String!
     var email:String!
-    var phno:String!
-    var uid: String!
+    var phone:String!
+    var user_id: String!
     var ref: FIRDatabaseReference?
     var key: String!
     init() { }
     
     
-    init(clinician: String,Name: String,email: String,phno: String,uid: String,key: String = ""){
-        self.clinician = clinician
-        self.Name = Name
+    init(clinician_type: String,name: String,email: String,phone: String,user_id: String,key: String = ""){
+        self.clinician_type = clinician_type
+        self.name = name
         self.email = email
-        self.phno = phno
-        self.uid = uid
+        self.phone = phone
+        self.user_id = user_id
         self.key = key
         self.ref = FIRDatabase.database().reference()
     }
@@ -34,17 +34,17 @@ struct Clinician {
     init(snapshot: FIRDataSnapshot){
         
         self.key = snapshot.key
-        clinician = snapshot.value!["clinician"] as! String
-        Name = snapshot.value!["Name"] as! String
+        clinician_type = snapshot.value!["clinician_type"] as! String
+        name = snapshot.value!["name"] as! String
         email = snapshot.value!["email"] as! String
-        phno = snapshot.value!["phno"] as! String
-        uid = snapshot.value!["uid"] as! String
+       phone = snapshot.value!["phone"] as! String
+       user_id = snapshot.value!["user_id"] as! String
         self.ref = snapshot.ref
         print(self.ref)
     }
     func toAnyObject() -> [String: AnyObject] {
         
-             return ["clinician": clinician,"Name": Name,"email": email,"phno": phno,"uid":uid]
+             return ["clinician_type": clinician_type,"name": name,"email": email,"phone": phone,"user_id":user_id]
         
     }
 }
