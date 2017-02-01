@@ -10,9 +10,12 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class RequestClinicianViewController: UIViewController,UITableViewDataSource, UITableViewDelegate{
+class RequestClinicianViewController: UIViewController,UITableViewDataSource, UITableViewDelegate,UIPopoverPresentationControllerDelegate{
     
     @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var displayLabel: UILabel!
+    var popover: PopUpRequestClinViewController? = nil
+    
     var clinArray = [Clinician]()
 
     @IBOutlet weak var addButton: UIButton!
@@ -21,20 +24,14 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        addButton.hidden = true
-    
+           HideButton()    
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         loadDataFromFirebase()
-//        HideButton()
+        HideButton()
 
-//        if clinArray.count >= 4 {
-//            print("array reached 5 entries")
-//            addButton.hidden = true
-//        }else{
-//            print("array not reached 5 entries yet")
-//        }
+
     }
 
 
@@ -44,18 +41,42 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+         print(clinArray.count)
         return self.clinArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ClinicianCell
-
-         cell.clinician.text = clinArray[indexPath.row].clinician
-         cell.clinName.text = clinArray[indexPath.row].Name
+         cell.clinician.text = clinArray[indexPath.row].clinician_type
+         cell.clinName.text = clinArray[indexPath.row].name
         cell.clinEmail.text = clinArray[indexPath.row].email
-         cell.clinPh.text = clinArray[indexPath.row].phno
+         cell.clinPh.text = clinArray[indexPath.row].phone
          return cell
+    }
+    
+    //code to show a alert
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+          let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("popup") as! PopUpRequestClinViewController
+        controller.modalPresentationStyle = UIModalPresentationStyle.Popover
+         controller.preferredContentSize = CGSize(width:300 , height: 250)
+        
+        let popoverPresentationController = controller.popoverPresentationController
+        
+        
+        if let popoverPresentationViewController = popoverPresentationController {
+            
+            // set the view from which to pop up
+            popoverPresentationViewController.sourceView = self.view
+            
+            popoverPresentationViewController.delegate = self
+            popoverPresentationViewController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds),0,0)
+            popoverPresentationViewController.permittedArrowDirections = UIPopoverArrowDirection()
+            
+            self.presentViewController(controller, animated: true, completion: nil)
+        }
     }
     
     
@@ -74,11 +95,11 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
     func loadDataFromFirebase()
     {
         //to check clinician info count
-         HideButton()
+       var u_id = FIRAuth.auth()?.currentUser!.uid
+        databaseRef = FIRDatabase.database().reference().child("clinician_details")
         
-      databaseRef = FIRDatabase.database().reference().child("Clinician Details")
-        
-        databaseRef.observeEventType(.Value, withBlock: { (snapshot) in
+        databaseRef.queryOrderedByChild("user_id").queryEqualToValue(u_id).observeEventType(.Value, withBlock: { (snapshot) in
+      
             
             var newItems = [Clinician]()
             
@@ -89,6 +110,7 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
             }
             
             self.clinArray = newItems
+            self.HideButton()
             self.tableview.reloadData()
             })
             {
@@ -109,5 +131,9 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
              addButton.hidden = false
         }
     }
- 
+
+    
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .None
+    }
 }

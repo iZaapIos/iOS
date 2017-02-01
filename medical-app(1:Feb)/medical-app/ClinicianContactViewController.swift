@@ -130,9 +130,9 @@ class ClinicianContactViewController: UIViewController, UITableViewDataSource, U
         var phno = self.clinNum.text
         var u_id = FIRAuth.auth()?.currentUser?.uid
 
-        let ref = databaseRef.child("Clinician Details").childByAutoId()
+        let ref = databaseRef.child("clinician_details").childByAutoId()
 
-        let updatenote = Clinician(clinician:clinTextField.text!, Name:clinName.text!,email:clinEmail.text!,phno:clinNum.text!,uid:u_id!)
+        let updatenote = Clinician(clinician_type:clinTextField.text!, name:clinName.text!,email:clinEmail.text!,phone:clinNum.text!,user_id:u_id!)
         print(updatenote)
         ref.setValue(updatenote.toAnyObject())
         

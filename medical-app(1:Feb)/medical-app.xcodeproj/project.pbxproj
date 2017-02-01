@@ -16,6 +16,7 @@
 		1F2C12EB1DC1FBCA0082DD93 /* menu_2_filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C12EA1DC1FBCA0082DD93 /* menu_2_filled-25.png */; };
 		1F2C12ED1DC1FC490082DD93 /* arrow_filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C12EC1DC1FC490082DD93 /* arrow_filled-25.png */; };
 		1F2C12EF1DC225C60082DD93 /* PopUpMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C12EE1DC225C30082DD93 /* PopUpMenuViewController.swift */; };
+		1F4960441E3F511400EA1286 /* PopUpRequestClinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4960431E3F511100EA1286 /* PopUpRequestClinViewController.swift */; };
 		1F5A43011DAE219200F97E06 /* UserRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A43001DAE218D00F97E06 /* UserRegister.swift */; };
 		1F5A43031DAE3A9A00F97E06 /* FirstViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A43021DAE3A9900F97E06 /* FirstViewcontroller.swift */; };
 		1F5D88651DCB393F00E65028 /* DosagePopUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D88641DCB393E00E65028 /* DosagePopUpTableViewController.swift */; };
@@ -29,7 +30,6 @@
 		1F770BCF1DE851D600DD4E8B /* roughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F770BCE1DE851D300DD4E8B /* roughVC.swift */; };
 		1F7720E21E1F8E94008BB4DD /* ClinicianCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7720E11E1F8E92008BB4DD /* ClinicianCell.swift */; };
 		1F7B45931E27A72D004A9F81 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7B45921E27A72C004A9F81 /* MessageUI.framework */; };
-		1F8260B11E24C26200D8FDC3 /* RequestClinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8260B01E24C26200D8FDC3 /* RequestClinTableViewController.swift */; };
 		1F831BA31DCC5E1F00DF1514 /* MedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F831BA21DCC5E1E00DF1514 /* MedTableViewCell.swift */; };
 		1F83259E1E1CD5A300A8B57B /* ClinicianContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83259D1E1CD5A200A8B57B /* ClinicianContactViewController.swift */; };
 		1F85C2BF1DFBDB0600D7C346 /* left-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F85C2BE1DFBDB0500D7C346 /* left-32.png */; };
@@ -108,6 +108,7 @@
 		1F2C12EA1DC1FBCA0082DD93 /* menu_2_filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_2_filled-25.png"; sourceTree = "<group>"; };
 		1F2C12EC1DC1FC490082DD93 /* arrow_filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_filled-25.png"; sourceTree = "<group>"; };
 		1F2C12EE1DC225C30082DD93 /* PopUpMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpMenuViewController.swift; sourceTree = "<group>"; };
+		1F4960431E3F511100EA1286 /* PopUpRequestClinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpRequestClinViewController.swift; sourceTree = "<group>"; };
 		1F5A43001DAE218D00F97E06 /* UserRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegister.swift; sourceTree = "<group>"; };
 		1F5A43021DAE3A9900F97E06 /* FirstViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewcontroller.swift; sourceTree = "<group>"; };
 		1F5D88641DCB393E00E65028 /* DosagePopUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DosagePopUpTableViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +122,6 @@
 		1F770BCE1DE851D300DD4E8B /* roughVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roughVC.swift; sourceTree = "<group>"; };
 		1F7720E11E1F8E92008BB4DD /* ClinicianCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicianCell.swift; sourceTree = "<group>"; };
 		1F7B45921E27A72C004A9F81 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		1F8260B01E24C26200D8FDC3 /* RequestClinTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestClinTableViewController.swift; sourceTree = "<group>"; };
 		1F831BA21DCC5E1E00DF1514 /* MedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedTableViewCell.swift; sourceTree = "<group>"; };
 		1F83259D1E1CD5A200A8B57B /* ClinicianContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicianContactViewController.swift; sourceTree = "<group>"; };
 		1F85C2BE1DFBDB0500D7C346 /* left-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-32.png"; sourceTree = "<group>"; };
@@ -237,6 +237,7 @@
 				1F83259D1E1CD5A200A8B57B /* ClinicianContactViewController.swift */,
 				1FC095411E16584800CD90AC /* ContactUsViewController.swift */,
 				1FC0953B1E16568100CD90AC /* RequestClinicianViewController.swift */,
+				1F4960431E3F511100EA1286 /* PopUpRequestClinViewController.swift */,
 				1F05AB9D1DD9C948002D8A77 /* UserDetailsViewController.swift */,
 				1FBD73D41E0568E500368A14 /* OtherTabletViewController.swift */,
 				1FF5ADA61DF5415100C88F30 /* RemedyViewController.swift */,
@@ -255,7 +256,6 @@
 				1F2C12EE1DC225C30082DD93 /* PopUpMenuViewController.swift */,
 				1F5D88641DCB393E00E65028 /* DosagePopUpTableViewController.swift */,
 				1FC1BD8C1DAF914B00849FA5 /* ResetPasswordViewController.swift */,
-				1F8260B01E24C26200D8FDC3 /* RequestClinTableViewController.swift */,
 			);
 			name = "view controller";
 			sourceTree = "<group>";
@@ -606,12 +606,12 @@
 				1FB5B9291DA76A310032B1B5 /* RegisterViewController.swift in Sources */,
 				1FF5ADA71DF5415100C88F30 /* RemedyViewController.swift in Sources */,
 				1F831BA31DCC5E1F00DF1514 /* MedTableViewCell.swift in Sources */,
+				1F4960441E3F511400EA1286 /* PopUpRequestClinViewController.swift in Sources */,
 				1FB5B9271DA76A310032B1B5 /* AppDelegate.swift in Sources */,
 				1FF5ADA51DF53FF700C88F30 /* checkboxCell.swift in Sources */,
 				1FC2070C1E30E1E2006820D7 /* SummaryDetailsCell.swift in Sources */,
 				1FC1590E1DE6CB0600C86FAF /* medlist.swift in Sources */,
 				1F83259E1E1CD5A300A8B57B /* ClinicianContactViewController.swift in Sources */,
-				1F8260B11E24C26200D8FDC3 /* RequestClinTableViewController.swift in Sources */,
 				1FC095401E16579600CD90AC /* clinicianDetails.swift in Sources */,
 				1FC1BD8D1DAF914C00849FA5 /* ResetPasswordViewController.swift in Sources */,
 				1F05AB9E1DD9C948002D8A77 /* UserDetailsViewController.swift in Sources */,

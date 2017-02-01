@@ -225,83 +225,6 @@
             endingLineNumber = "14"
             landmarkName = "SummaryViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.items.getter : Swift.Array&lt;medical_app.SummaryDetailsData&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.55607"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.items.setter : Swift.Array&lt;medical_app.SummaryDetailsData&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.556326"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.items.materializeForSet : Swift.Array&lt;medical_app.SummaryDetailsData&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.556594"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.init (medical_app.SummaryViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.SummaryViewController"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.55695"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.init (medical_app.SummaryViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.SummaryViewController&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.557336"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -318,83 +241,6 @@
             endingLineNumber = "24"
             landmarkName = "SummaryViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.summary.getter : Swift.Optional&lt;medical_app.SummaryData&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.561006"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.summary.setter : Swift.Optional&lt;medical_app.SummaryData&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.561291"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "332">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.summary.materializeForSet : Swift.Optional&lt;medical_app.SummaryData&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.561552"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.init (medical_app.SummaryViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; medical_app.SummaryViewController"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.561824"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "980">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.init (medical_app.SummaryViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;medical_app.SummaryViewController&gt;"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.562114"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "928">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -491,38 +337,6 @@
             endingLineNumber = "69"
             landmarkName = "loadDataFromFirebase()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.loadDataFromFirebase (medical_app.SummaryViewController)() -&gt; ()"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.571466"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "3024">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.(loadDataFromFirebase (medical_app.SummaryViewController) -&gt; () -&gt; ()).(closure #1)"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.571742"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -603,53 +417,6 @@
             endingLineNumber = "90"
             landmarkName = "loadDataFromFirebase()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.loadDataFromFirebase (medical_app.SummaryViewController)() -&gt; ()"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.578078"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "3252">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.(loadDataFromFirebase (medical_app.SummaryViewController) -&gt; () -&gt; ()).(closure #1)"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.578378"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "4092">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.(loadDataFromFirebase (medical_app.SummaryViewController) -&gt; () -&gt; ()).(closure #2)"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.578698"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -666,53 +433,6 @@
             endingLineNumber = "89"
             landmarkName = "loadDataFromFirebase()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.loadDataFromFirebase (medical_app.SummaryViewController)() -&gt; ()"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.581015"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "3252">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.(loadDataFromFirebase (medical_app.SummaryViewController) -&gt; () -&gt; ()).(closure #1)"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.581301"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "4092">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "medical_app.SummaryViewController.(loadDataFromFirebase (medical_app.SummaryViewController) -&gt; () -&gt; ()).(closure #2)"
-                  moduleName = "medical-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryViewController.swift"
-                  timestampString = "507207821.581585"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1121,13 +841,13 @@
                   symbolName = "medical_app.SummaryDetailViewController.(loadDataFromFirebase (medical_app.SummaryDetailViewController) -&gt; () -&gt; ()).(closure #1)"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryDetailViewController.swift"
-                  timestampString = "507207821.60979"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(30:jan)/medical-app/SummaryDetailViewController.swift"
+                  timestampString = "507647003.169992"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "4452">
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "4332">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1136,13 +856,13 @@
                   symbolName = "medical_app.SummaryDetailViewController.(loadDataFromFirebase (medical_app.SummaryDetailViewController) -&gt; () -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "medical-app"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gauravjain/Desktop/medical-app(25:jan)/medical-app/SummaryDetailViewController.swift"
-                  timestampString = "507207821.610076"
+                  urlString = "file:///Users/gauravjain/Desktop/medical-app(30:jan)/medical-app/SummaryDetailViewController.swift"
+                  timestampString = "507647003.170483"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "28">
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "40">
                </Location>
             </Locations>
          </BreakpointContent>
