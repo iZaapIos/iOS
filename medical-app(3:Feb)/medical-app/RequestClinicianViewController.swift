@@ -14,6 +14,7 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
     
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var displayLabel: UILabel!
+    var popover: PopUpRequestClinViewController? = nil
     
     var clinArray = [Clinician]()
 
@@ -47,7 +48,6 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ClinicianCell
-
          cell.clinician.text = clinArray[indexPath.row].clinician_type
          cell.clinName.text = clinArray[indexPath.row].name
         cell.clinEmail.text = clinArray[indexPath.row].email
@@ -58,27 +58,25 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
     //code to show a alert
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
+          let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("popup") as! PopUpRequestClinViewController
+        controller.modalPresentationStyle = UIModalPresentationStyle.Popover
+         controller.preferredContentSize = CGSize(width:300 , height: 250)
         
-//        let vc = storyboard?.instantiateViewControllerWithIdentifier("PopUpReq") as! PopUpRequestClinViewController
-//        vc.preferredContentSize = CGSize(width:200 , height:200)
-//
-//        vc.modalPresentationStyle = UIModalPresentationStyle.Popover
-//        
-//        //code to define popoverViewController
-//         let popOver = vc.popoverPresentationController
-//        popOver?.delegate = self
-//        popOver?.sourceView = self.view
-//        popOver?.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds),0,0)
-//        
-//        self.presentViewController(vc, animated: true, completion: nil)
+        let popoverPresentationController = controller.popoverPresentationController
         
-        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("PopUpReq") as! PopUpRequestClinViewController
-        vc.modalPresentationStyle = UIModalPresentationStyle.Popover
-        let popover: UIPopoverPresentationController = vc.popoverPresentationController!
-        popover.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds),0,0)
-        presentViewController(vc, animated: true, completion:nil)
-       
+        
+        if let popoverPresentationViewController = popoverPresentationController {
+            
+            // set the view from which to pop up
+            popoverPresentationViewController.sourceView = self.view
+            
+            popoverPresentationViewController.delegate = self
+            popoverPresentationViewController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds),0,0)
+            popoverPresentationViewController.permittedArrowDirections = UIPopoverArrowDirection()
+            
+            self.presentViewController(controller, animated: true, completion: nil)
+        }
     }
     
     
@@ -133,5 +131,9 @@ class RequestClinicianViewController: UIViewController,UITableViewDataSource, UI
              addButton.hidden = false
         }
     }
- 
+
+    
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .None
+    }
 }
