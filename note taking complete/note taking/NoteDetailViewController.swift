@@ -102,19 +102,13 @@ class NoteDetailViewController: UIViewController,UITextViewDelegate{
         }
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let NoteDetailViewController = storyboard.instantiateViewControllerWithIdentifier("ContentVC") as UIViewController
-        navigationController?.pushViewController(NoteDetailViewController, animated: true)
+        let NoteTableViewController = storyboard.instantiateViewControllerWithIdentifier("ContentVC") as UIViewController
+        navigationController?.pushViewController(NoteTableViewController, animated: true)
         
         clear()
 
     }
-
-        
-        
-        
-        
-        
-   
+    
     func clear()
     {
         NoteTextField!.delegate = self

@@ -81,7 +81,7 @@ class UpdateViewController: UIViewController,UITextViewDelegate {
         
     }
     
-//    
+    
 //    func clear()
 //    {
 //        ContentTextField!.delegate = self
@@ -100,7 +100,6 @@ class UpdateViewController: UIViewController,UITextViewDelegate {
     {
         TextPlaceHolder!.hidden = !textView.text.isEmpty
     }
-    
     
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

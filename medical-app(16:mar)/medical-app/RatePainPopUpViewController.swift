@@ -16,8 +16,13 @@ class RatePainPopUpViewController: UIViewController {
     
     @IBOutlet weak var Ratelbl: UILabel?
     @IBOutlet weak var CommentText: UITextView?
-    var rate: String?
-    var Cmt: String?
+    var rate: String!
+    var Cmt: String!
+    var Arr: String!
+    var part: String!
+    
+    var temp = [String]()
+    var painArr: [String] = []
     
     var databaseRef: FIRDatabaseReference!{
         return FIRDatabase.database().reference()
@@ -26,6 +31,9 @@ class RatePainPopUpViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+         print(part)
+       
+       
         
     }
     @IBAction func PainRateSlider(sender: UISlider)
@@ -33,25 +41,26 @@ class RatePainPopUpViewController: UIViewController {
         var currentValue = Int(sender.value)
         
         Ratelbl!.text = "\(currentValue)"
+    
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-//        
-//        if segue.identifier == "goToRemedyVC" {
-//            
-//            let vc = segue.destinationViewController as! RatePainTableViewController
-//            vc.RateRev = Ratelbl?.text
-//           print(vc.RateRev)
-//            vc.CmtRev = CommentText!.text
-//            print(vc.CmtRev)
-//
-//
-//        }
-    //}
+
     
     
     @IBAction func choose(sender: AnyObject) {
-
+        
+//        temp.append(Ratelbl!.text!)
+//        temp.append(part)
+//        temp.append(CommentText!.text)
+//        
+////         print(temp)
+//        Arr = temp.description
+//        
+////        print(Arr)
+//        
+//        
+//        painArr.append(Arr)
+//        print(painArr)
         self.dismissViewControllerAnimated(true, completion: nil);
     }
     

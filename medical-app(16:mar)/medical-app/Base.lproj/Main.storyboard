@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jpR-4f-FGw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pFH-pF-ne4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -187,6 +187,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="JTY-Ip-Fwx" kind="show" id="yoW-hK-2jg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3f-b2-LFu">
                                 <rect key="frame" x="6" y="219" width="308" height="42"/>
@@ -270,17 +273,17 @@
                                 <rect key="frame" x="7" y="6" width="307" height="468"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gg1-hL-uly">
-                                    <size key="itemSize" width="91" height="123"/>
+                                    <size key="itemSize" width="91" height="115"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="qxO-hs-T4R" customClass="RatePainCell" customModule="medical_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="91" height="123"/>
+                                        <rect key="frame" x="0.0" y="64" width="91" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="91" height="123"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="91" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCi-Pa-lip">
@@ -293,17 +296,18 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YII-79-4j0">
                                                     <rect key="frame" x="8" y="91" width="75" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <size key="customSize" width="91" height="123"/>
+                                        <size key="customSize" width="91" height="115"/>
                                         <connections>
                                             <outlet property="button" destination="lCi-Pa-lip" id="q4n-Ns-M43"/>
                                             <outlet property="partLbl" destination="YII-79-4j0" id="XHH-Jx-Nxn"/>
                                             <outlet property="tick" destination="Eph-yY-X98" id="RQZ-rd-IHM"/>
+                                            <segue destination="0LV-Ok-fX1" kind="show" identifier="gotoratePain" id="HB9-yP-QQb"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -427,6 +431,7 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="CommentText" destination="ABe-fQ-9TN" id="iHa-HI-HPc"/>
@@ -729,7 +734,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l77-fD-kxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6302" y="-1683"/>
+            <point key="canvasLocation" x="7114" y="-1683"/>
         </scene>
         <!--Pop Up Menu View Controller-->
         <scene sceneID="qyC-b7-0o2">
@@ -1605,7 +1610,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6UQ-JM-ixK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4886" y="-89"/>
+            <point key="canvasLocation" x="4888" y="-53"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3yU-2l-Vmh">
@@ -1720,7 +1725,45 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bil-qA-pj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5823" y="-1683"/>
+            <point key="canvasLocation" x="6635" y="-1683"/>
+        </scene>
+        <!--Pain Chart View Controller-->
+        <scene sceneID="GLO-cU-gZ4">
+            <objects>
+                <viewController id="JTY-Ip-Fwx" customClass="PainChartViewController" customModule="medical_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5KL-7P-7Ws"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBv-pj-ejc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="69z-pg-g38">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ii2-9A-kDU" customClass="JBBarChartView">
+                                <rect key="frame" x="10" y="8" width="300" height="346"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynj-nK-5hn">
+                                <rect key="frame" x="10" y="362" width="300" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.17525211409999999" blue="0.15279035229999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yU9-JA-6Om"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="barChart" destination="Ii2-9A-kDU" id="OnX-cW-qf8"/>
+                        <outlet property="info" destination="ynj-nK-5hn" id="agM-np-EMH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NoD-af-fEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5377" y="-608"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qhS-75-awr">
@@ -1739,7 +1782,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mkk-23-Lwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5464" y="-1683"/>
+            <point key="canvasLocation" x="6276" y="-1683"/>
         </scene>
         <!--Other Tablet View Controller-->
         <scene sceneID="khv-gB-kO2">
@@ -2030,7 +2073,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYX-M9-jDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4568" y="600"/>
+            <point key="canvasLocation" x="4996" y="595"/>
         </scene>
         <!--Request Clinician View Controller-->
         <scene sceneID="xWa-2J-ZCs">
@@ -2144,7 +2187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qrq-sP-kT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4207" y="572"/>
+            <point key="canvasLocation" x="4635" y="567"/>
         </scene>
         <!--Clinician Contact View Controller-->
         <scene sceneID="FTd-fv-0Bi">
@@ -2402,6 +2445,6 @@
         <image name="twitter.png" width="130" height="130"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aK0-oH-suA"/>
+        <segue reference="w4J-Z9-b6k"/>
     </inferredMetricsTieBreakers>
 </document>

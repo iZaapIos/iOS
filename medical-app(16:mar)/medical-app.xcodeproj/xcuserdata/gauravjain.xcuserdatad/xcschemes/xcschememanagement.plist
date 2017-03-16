@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JBChart.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>medical-app.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1F6A8FE71E71711600FA8656</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F6A8FF01E71711700FA8656</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1FB5B9221DA76A300032B1B5</key>
 		<dict>
 			<key>primary</key>
