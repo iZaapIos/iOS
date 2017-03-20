@@ -85,7 +85,7 @@ class RatePainTableViewController: UIViewController,UICollectionViewDelegate,UIC
         remedyStr = remedyStr.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil) // string without quotes
         popUP()
         
-//        collectnView.reloadData()
+        collectnView.reloadData()
 
     }
     
@@ -94,7 +94,7 @@ class RatePainTableViewController: UIViewController,UICollectionViewDelegate,UIC
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewControllerWithIdentifier("ratepainPopup") as! RatePainPopUpViewController
         
-//        controller.part = remedyStr
+        controller.part = remedyStr
         
         controller.modalPresentationStyle = UIModalPresentationStyle.Popover
         controller.preferredContentSize = CGSize(width:300 , height: 280)
