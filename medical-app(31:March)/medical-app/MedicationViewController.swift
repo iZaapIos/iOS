@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class MedicationViewController: UIViewController,UIPopoverPresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate{
     
@@ -78,9 +79,12 @@ class MedicationViewController: UIViewController,UIPopoverPresentationController
     func loadDataFromFirebase() {
         
         
-        databaseRef = FIRDatabase.database().reference().child("medication")
+    databaseRef = FIRDatabase.database().reference().child("medication")
+        print(databaseRef)
      
-        databaseRef.observeEventType(.Value, withBlock: { (snapshot) in
+//        databaseRef.observeEventType(.Value, withBlock: { (snapshot) in
+        databaseRef.observeEventType(.Value, withBlock: {(snapshot) in
+             print(snapshot)
         for item in snapshot.children {
                 
                 if let name = item.value!!["tablet"] as? String
